@@ -141,6 +141,12 @@
     
 <div class="card">
     
+    <div class="card-image">
+        <a href="/2019/11/18/191119/" class="image is-7by1">
+            <img class="thumbnail" src="/image/thumbnail/TIL.jpeg" alt="191119">
+        </a>
+    </div>
+    
     <div class="card-content article ">
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
@@ -155,7 +161,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    2분 읽기 (나에 대하여 324 단어)
+                    4분 읽기 (나에 대하여 647 단어)
                 </span>
                 
                 
@@ -169,22 +175,24 @@
         </h1>
         <div class="content">
             <h3 id="개요"><a href="#개요" class="headerlink" title="개요"></a>개요</h3><hr>
+<ol>
+<li>파이썬 웹프로그래밍</li>
+<li>hexo 유튭영상 구상</li>
+<li>인스타그램 오픈소스 구상</li>
+</ol>
 <br>
-1. 파이썬 웹프로그래밍
-1. hexo 유튭영상 구상
-1. 인스타그램 오픈소스 구상
-
 
 <h4 id="파이썬-웹프로그래밍"><a href="#파이썬-웹프로그래밍" class="headerlink" title="파이썬 웹프로그래밍"></a>파이썬 웹프로그래밍</h4><hr>
-<br>
-
 <p><strong>06 django 웹 서버의 작동원리( 개정판 저자:김석훈)</strong></p>
 <ul>
 <li>uwsgi<br>운영서버에서 nginx, 아파치 등의 웹서를 이용해서<br>서비스를 가능하도록 해주는 기능이다</li>
 </ul>
 <p>웹서버의 구성과 os에 따라서 구성하는 방법이 조금 달라서 난이도가 있는 내용</p>
 <ul>
-<li>정적파일을 모아주는 명령어<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">python manage.py collectstatic</span><br></pre></td></tr></table></figure></li>
+<li>정적파일을 모아주는 명령어</li>
+</ul>
+<p>python manage.py collectstatic</p>
+<ul>
 <li>ALLOWED_HOST=[] 설정이 빈칸으로 되어있을 때<br>ALLOWED_HOST=[‘localhost’, ‘127.0.0.1’]<br>와 같은 내용이다</li>
 </ul>
 <p>-nginx 웹서버와 연동하는 순서<br>gunicorn 프로그램을 이용해서 연동<br>nginx , python-devel, uwsgi 설치<br>nginx, uwsgi 설정</p>
@@ -192,6 +200,8 @@
 <h4 id="인스타그램클론-저장소-오픈소스-커뮤니티로-만들-계획"><a href="#인스타그램클론-저장소-오픈소스-커뮤니티로-만들-계획" class="headerlink" title="인스타그램클론 저장소 오픈소스 커뮤니티로 만들 계획"></a>인스타그램클론 저장소 오픈소스 커뮤니티로 만들 계획</h4><hr>
 <p>front-end , back-end 폴더로 만들기<br>버전업이 되면 폴더째로 더이상 변경하지 않음</p>
 <p>소스는 누구든 분석하고 변경가능 강의도 제작 가능</p>
+<figure class="highlight markdown hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-section">### 개요</span></span><br><span class="line">------</span><br><span class="line"><span class="hljs-bullet">1. </span>파이썬 웹프로그래밍</span><br><span class="line"><span class="hljs-bullet">1. </span>hexo 유튭영상 구상</span><br><span class="line"><span class="hljs-bullet">1. </span>인스타그램 오픈소스 구상</span><br><span class="line"></span><br><span class="line"><span class="hljs-xml"><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="hljs-section">#### 파이썬 웹프로그래밍</span></span><br><span class="line">------</span><br><span class="line"></span><br><span class="line"><span class="hljs-strong">**06 django 웹 서버의 작동원리( 개정판 저자:김석훈)**</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-bullet">- </span>uwsgi</span><br><span class="line">운영서버에서 nginx, 아파치 등의 웹서를 이용해서</span><br><span class="line">서비스를 가능하도록 해주는 기능이다</span><br><span class="line"></span><br><span class="line">웹서버의 구성과 os에 따라서 구성하는 방법이 조금 달라서 난이도가 있는 내용</span><br><span class="line"></span><br><span class="line"><span class="hljs-bullet">- </span>정적파일을 모아주는 명령어</span><br><span class="line"></span><br><span class="line">python manage.py collectstatic</span><br><span class="line"></span><br><span class="line"><span class="hljs-bullet">- </span>ALLOWED_HOST=[] 설정이 빈칸으로 되어있을 때</span><br><span class="line">ALLOWED_HOST=['localhost', '127.0.0.1']</span><br><span class="line">와 같은 내용이다</span><br><span class="line"></span><br><span class="line">-nginx 웹서버와 연동하는 순서</span><br><span class="line">gunicorn 프로그램을 이용해서 연동</span><br><span class="line">nginx , python-devel, uwsgi 설치 </span><br><span class="line">nginx, uwsgi 설정</span><br><span class="line"></span><br><span class="line"><span class="hljs-strong">**04 django의 핵심기능**</span></span><br><span class="line">요거는 보다가 눈이 시려서 나중에 보려고 목차만 추려놓음</span><br><span class="line">4.2 장고 파이썬 쉘로 데이터 조작하기</span><br><span class="line">4.4 폼처리하기</span><br><span class="line">4.5 클래스형 뷰</span><br><span class="line"></span><br><span class="line"><span class="hljs-section">#### 인스타그램클론 저장소 오픈소스 커뮤니티로 만들 계획</span></span><br><span class="line">------</span><br><span class="line">front-end , back-end 폴더로 만들기</span><br><span class="line">버전업이 되면 폴더째로 더이상 변경하지 않음</span><br><span class="line"></span><br><span class="line">소스는 누구든 분석하고 변경가능 강의도 제작 가능</span><br></pre></td></tr></table></figure>
+
 
         </div>
         
@@ -481,7 +491,7 @@
             
             <a href="/2019/11/18/191119/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="191119">
+                    <img class="thumbnail" src="/image/thumbnail/TIL.jpeg" alt="191119">
                 </p>
             </a>
             
@@ -731,7 +741,7 @@
             
             <a href="/2019/11/18/191119/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="191119">
+                    <img class="thumbnail" src="/image/thumbnail/TIL.jpeg" alt="191119">
                 </p>
             </a>
             
