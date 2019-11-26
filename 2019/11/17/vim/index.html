@@ -10,18 +10,18 @@
 <title>vim - kindfamily</title>
 
 
-    <meta name="description" content="카인드패밀리 기술블로그">
+    <meta name="description" content="vim에디터는 터미널에서 파일을 수정할수 있는 좋은 도구입니다 하지만 터미널에서 수정을 한다는것 자체가 어색한 일이고 자주 쓸일이 없다보니 .. 사용을 안하게 되는것이 사실입니다  본 포스팅에서는 vim에디터의 방대한(?) 명령어를 레벨별로 이해할 수 있도록 추려볼가 합니다   현재이 블로그는 구름ide컨테이너를 ssh로 접속해서 작성을 하고 있습니다ssh">
 <meta name="keywords" content="vim">
 <meta property="og:type" content="article">
 <meta property="og:title" content="vim">
 <meta property="og:url" content="https:&#x2F;&#x2F;kindfamily.github.io&#x2F;2019&#x2F;11&#x2F;17&#x2F;vim&#x2F;index.html">
 <meta property="og:site_name" content="kindfamily">
-<meta property="og:description" content="카인드패밀리 기술블로그">
+<meta property="og:description" content="vim에디터는 터미널에서 파일을 수정할수 있는 좋은 도구입니다 하지만 터미널에서 수정을 한다는것 자체가 어색한 일이고 자주 쓸일이 없다보니 .. 사용을 안하게 되는것이 사실입니다  본 포스팅에서는 vim에디터의 방대한(?) 명령어를 레벨별로 이해할 수 있도록 추려볼가 합니다   현재이 블로그는 구름ide컨테이너를 ssh로 접속해서 작성을 하고 있습니다ssh">
 <meta property="og:locale" content="ko">
-<meta property="og:image" content="https:&#x2F;&#x2F;kindfamily.github.io&#x2F;image&#x2F;thumbnail&#x2F;ready.jpeg">
-<meta property="og:updated_time" content="2019-11-17T16:24:00.606Z">
+<meta property="og:image" content="https:&#x2F;&#x2F;kindfamily.github.io&#x2F;image&#x2F;post&#x2F;vim.png">
+<meta property="og:updated_time" content="2019-11-26T02:57:08.026Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https:&#x2F;&#x2F;kindfamily.github.io&#x2F;image&#x2F;thumbnail&#x2F;ready.jpeg">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;kindfamily.github.io&#x2F;image&#x2F;post&#x2F;vim.png">
 
 
 
@@ -133,7 +133,7 @@
     
     <div class="card-image">
         <span  class="image is-7by1">
-            <img class="thumbnail" src="/image/thumbnail/ready.jpeg" alt="vim">
+            <img class="thumbnail" src="/image/post/vim.png" alt="vim">
         </span>
     </div>
     
@@ -144,14 +144,14 @@
                 <time class="level-item has-text-grey" datetime="2019-11-17T06:59:47.000Z">2019-11-17</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/02-%EC%96%B8%EC%96%B4/">02_언어</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/02-%EC%96%B8%EC%96%B4/vim-%EC%9E%91%EC%84%B1%EC%A4%91/">vim(작성중)</a>
+                <a class="has-link-grey -link" href="/categories/02-%EC%96%B8%EC%96%B4/">02_언어</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/02-%EC%96%B8%EC%96%B4/vim/">vim</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    몇 초 읽기 (나에 대하여 0 단어)
+                    2분 읽기 (나에 대하여 370 단어)
                 </span>
                 
                 
@@ -164,7 +164,23 @@
             
         </h1>
         <div class="content">
-            
+            <p>vim에디터는 터미널에서 파일을 수정할수 있는 좋은 도구입니다 하지만 터미널에서 수정을 한다는것 자체가 어색한 일이고 자주 쓸일이 없다보니 .. 사용을 안하게 되는것이 사실입니다 </p>
+<p>본 포스팅에서는 vim에디터의 방대한(?) 명령어를 레벨별로 이해할 수 있도록 추려볼가 합니다 </p>
+<p><img src="/image/post/vim-cheat.png" alt="vim단축키극혐 -_-;;"></p>
+<p>현재이 블로그는 구름ide컨테이너를 ssh로 접속해서 작성을 하고 있습니다<br>ssh 접속방법이 궁금하다면 <a href="https://youtu.be/JslmImgP4Os" target="_blank" rel="noopener">링크</a> </p>
+<h6 id="레벨1"><a href="#레벨1" class="headerlink" title="레벨1"></a>레벨1</h6><p>상황: 터미널로만 접속해서 오타수정을 살짝하고 저장해야하는경우 </p>
+<p><strong>vi [파일명]<br>i : insert 모드<br>esc &gt; :wd &gt; enter</strong></p>
+<p><img src="/image/post/gif/vimlevel1.GIF" alt="vim사용법 레벨1"></p>
+<h6 id="레벨2"><a href="#레벨2" class="headerlink" title="레벨2"></a>레벨2</h6><p>상황 : 라인을 확인해서 수정을 해야하함<br>문제가 생기면 undo도 해야함<br>복사해서 붙여넣기를 햐야할 소스가 있음</p>
+<p>vim라인 표시해주는 명령어</p>
+<figure class="highlight markdown hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">:set number </span><br><span class="line"><span class="hljs-section"># 또는</span></span><br><span class="line">:set num</span><br></pre></td></tr></table></figure>
+
+<p>원하는 라인으로 이동</p>
+<figure class="highlight markdown hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">:[라인숫자]</span><br></pre></td></tr></table></figure>
+<p>u : undo</p>
+<p>복사해서 붙여넣기<br>v : 복사하고 싶은 범위 선택( 방향키로 선택 가능 )<br>y : 복사하기 ( c : 잘라내기 )<br>p : 붙여넣기</p>
+<p><img src="/image/post/gif/vimlevel2-1.GIF" alt="라인표시라인으로이동"><br>복사해서 붙여넣기 gif 넣기</p>
+
         </div>
         
         <div class="level is-size-7 is-uppercase">
@@ -285,7 +301,7 @@
                         포스트
                     </p>
                     <p class="title has-text-weight-normal">
-                        11
+                        12
                     </p>
                 </div>
             </div>
@@ -295,7 +311,7 @@
                         카테고리
                     </p>
                     <p class="title has-text-weight-normal">
-                        15
+                        16
                     </p>
                 </div>
             </div>
@@ -305,7 +321,7 @@
                         태그
                     </p>
                     <p class="title has-text-weight-normal">
-                        20
+                        21
                     </p>
                 </div>
             </div>
@@ -432,9 +448,9 @@
                 <span class="level-item tag">1</span>
             </span>
         </a></li><li>
-        <a class="level is-marginless" href="/categories/02-%EC%96%B8%EC%96%B4/vim-%EC%9E%91%EC%84%B1%EC%A4%91/">
+        <a class="level is-marginless" href="/categories/02-%EC%96%B8%EC%96%B4/vim/">
             <span class="level-start">
-                <span class="level-item">vim(작성중)</span>
+                <span class="level-item">vim</span>
             </span>
             <span class="level-end">
                 <span class="level-item tag">1</span>
@@ -461,7 +477,7 @@
                 <span class="level-item">TIL</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">7</span>
+                <span class="level-item tag">8</span>
             </span>
         </a><ul><li>
         <a class="level is-marginless" href="/categories/TIL/191117/">
@@ -519,6 +535,14 @@
             <span class="level-end">
                 <span class="level-item tag">1</span>
             </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/TIL/191126/">
+            <span class="level-start">
+                <span class="level-item">191126</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
         </a></li></ul></li>
             </ul>
         </div>
@@ -530,7 +554,7 @@
         <h3 class="menu-label">
             태그 클라우드
         </h3>
-        <a href="/tags/TIL/" style="font-size: 20px;">TIL</a> <a href="/tags/airbnb/" style="font-size: 10px;">airbnb</a> <a href="/tags/aws/" style="font-size: 10px;">aws</a> <a href="/tags/django/" style="font-size: 10px;">django</a> <a href="/tags/github/" style="font-size: 16.67px;">github</a> <a href="/tags/githubaction/" style="font-size: 13.33px;">githubaction</a> <a href="/tags/githubpackage/" style="font-size: 10px;">githubpackage</a> <a href="/tags/goormide/" style="font-size: 10px;">goormide</a> <a href="/tags/hexo/" style="font-size: 13.33px;">hexo</a> <a href="/tags/markdown/" style="font-size: 16.67px;">markdown</a> <a href="/tags/python/" style="font-size: 10px;">python</a> <a href="/tags/ssh/" style="font-size: 10px;">ssh</a> <a href="/tags/vim/" style="font-size: 13.33px;">vim</a> <a href="/tags/youtube/" style="font-size: 10px;">youtube</a> <a href="/tags/%EB%85%B8%EB%A7%88%EB%93%9C%EC%BD%94%EB%8D%94/" style="font-size: 10px;">노마드코더</a> <a href="/tags/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4/" style="font-size: 10px;">오픈소스</a> <a href="/tags/%EC%9E%A5%EA%B3%A0%EB%B0%B0%ED%8F%AC/" style="font-size: 10px;">장고배포</a> <a href="/tags/%ED%84%B0%EB%AF%B8%EB%84%90%EC%82%AC%EC%9A%A9%EB%B2%95/" style="font-size: 13.33px;">터미널사용법</a> <a href="/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9B%B9%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/" style="font-size: 10px;">파이썬웹프로그래밍</a> <a href="/tags/%ED%95%99%EC%8A%B5%EC%9E%90%EB%A3%8C/" style="font-size: 10px;">학습자료</a>
+        <a href="/tags/TIL/" style="font-size: 20px;">TIL</a> <a href="/tags/airbnb/" style="font-size: 10px;">airbnb</a> <a href="/tags/aws/" style="font-size: 10px;">aws</a> <a href="/tags/django/" style="font-size: 13.33px;">django</a> <a href="/tags/github/" style="font-size: 16.67px;">github</a> <a href="/tags/githubaction/" style="font-size: 13.33px;">githubaction</a> <a href="/tags/githubpackage/" style="font-size: 10px;">githubpackage</a> <a href="/tags/goormide/" style="font-size: 10px;">goormide</a> <a href="/tags/hexo/" style="font-size: 13.33px;">hexo</a> <a href="/tags/mac/" style="font-size: 10px;">mac</a> <a href="/tags/markdown/" style="font-size: 16.67px;">markdown</a> <a href="/tags/python/" style="font-size: 10px;">python</a> <a href="/tags/ssh/" style="font-size: 10px;">ssh</a> <a href="/tags/vim/" style="font-size: 13.33px;">vim</a> <a href="/tags/youtube/" style="font-size: 10px;">youtube</a> <a href="/tags/%EB%85%B8%EB%A7%88%EB%93%9C%EC%BD%94%EB%8D%94/" style="font-size: 10px;">노마드코더</a> <a href="/tags/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4/" style="font-size: 10px;">오픈소스</a> <a href="/tags/%EC%9E%A5%EA%B3%A0%EB%B0%B0%ED%8F%AC/" style="font-size: 10px;">장고배포</a> <a href="/tags/%ED%84%B0%EB%AF%B8%EB%84%90%EC%82%AC%EC%9A%A9%EB%B2%95/" style="font-size: 13.33px;">터미널사용법</a> <a href="/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9B%B9%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/" style="font-size: 10px;">파이썬웹프로그래밍</a> <a href="/tags/%ED%95%99%EC%8A%B5%EC%9E%90%EB%A3%8C/" style="font-size: 10px;">학습자료</a>
     </div>
 </div>
     
@@ -545,9 +569,28 @@
         
         <article class="media">
             
+            <a href="/2019/11/25/191126/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/image/thumbnail/TIL.jpeg" alt="191126">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-25T17:05:38.000Z">2019-11-26</time></div>
+                    <a href="/2019/11/25/191126/" class="title has-link-black-ter is-size-6 has-text-weight-normal">191126</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/TIL/">TIL</a> / <a class="has-link-grey -link" href="/categories/TIL/191126/">191126</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/2019/11/23/191123/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="191123">
+                    <img class="thumbnail" src="/image/thumbnail/TIL.jpeg" alt="191123">
                 </p>
             </a>
             
@@ -619,25 +662,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/11/18/191119/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/image/thumbnail/TIL.jpeg" alt="191119">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-18T20:42:32.000Z">2019-11-19</time></div>
-                    <a href="/2019/11/18/191119/" class="title has-link-black-ter is-size-6 has-text-weight-normal">191119</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/TIL/">TIL</a> / <a class="has-link-grey -link" href="/categories/TIL/191119/">191119</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
         
@@ -655,7 +679,7 @@
                     <span class="level-item">11월 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">11</span>
+                    <span class="level-item tag">12</span>
                 </span>
             </a>
         </li>
@@ -697,7 +721,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/django/">
                         <span class="tag">django</span>
-                        <span class="tag is-grey">1</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
@@ -733,6 +757,13 @@
                     <a class="tags has-addons" href="/tags/hexo/">
                         <span class="tag">hexo</span>
                         <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/mac/">
+                        <span class="tag">mac</span>
+                        <span class="tag is-grey">1</span>
                     </a>
                 </div>
                 
@@ -837,9 +868,28 @@
         
         <article class="media">
             
+            <a href="/2019/11/25/191126/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/image/thumbnail/TIL.jpeg" alt="191126">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-25T17:05:38.000Z">2019-11-26</time></div>
+                    <a href="/2019/11/25/191126/" class="title has-link-black-ter is-size-6 has-text-weight-normal">191126</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/TIL/">TIL</a> / <a class="has-link-grey -link" href="/categories/TIL/191126/">191126</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/2019/11/23/191123/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="191123">
+                    <img class="thumbnail" src="/image/thumbnail/TIL.jpeg" alt="191123">
                 </p>
             </a>
             
@@ -911,25 +961,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/11/18/191119/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/image/thumbnail/TIL.jpeg" alt="191119">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-18T20:42:32.000Z">2019-11-19</time></div>
-                    <a href="/2019/11/18/191119/" class="title has-link-black-ter is-size-6 has-text-weight-normal">191119</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/TIL/">TIL</a> / <a class="has-link-grey -link" href="/categories/TIL/191119/">191119</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
     
@@ -947,7 +978,7 @@
                     <span class="level-item">11월 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">11</span>
+                    <span class="level-item tag">12</span>
                 </span>
             </a>
         </li>
@@ -989,7 +1020,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/django/">
                         <span class="tag">django</span>
-                        <span class="tag is-grey">1</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
@@ -1025,6 +1056,13 @@
                     <a class="tags has-addons" href="/tags/hexo/">
                         <span class="tag">hexo</span>
                         <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/mac/">
+                        <span class="tag">mac</span>
+                        <span class="tag is-grey">1</span>
                     </a>
                 </div>
                 
