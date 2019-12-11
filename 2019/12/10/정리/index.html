@@ -19,7 +19,7 @@
 <meta property="og:description" content="do-it 지옥에서 온 github 책을 보고 fetch 명령어에 대해서 정리한 내용입니다책구매링크05 깃허브로 협업하기 챕터를 읽고 fetch에 대해서 정리  다른사람이 수정한 소스를 흟어보고 합치고 싶을때 이용한다. 원격저장소의 정보만 가져오는 방식이다. git pull 명령은 git fetch + git merge FETCH_HEAD 명령을 합친것과">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="https:&#x2F;&#x2F;kindfamily.github.io&#x2F;image&#x2F;post&#x2F;hellgit.jpg">
-<meta property="og:updated_time" content="2019-12-11T05:17:17.282Z">
+<meta property="og:updated_time" content="2019-12-11T06:11:32.058Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;kindfamily.github.io&#x2F;image&#x2F;post&#x2F;hellgit.jpg">
 
@@ -171,7 +171,7 @@
 <br>
 
 <h6 id="받아온-커밋을-살펴보고-싶을때"><a href="#받아온-커밋을-살펴보고-싶을때" class="headerlink" title="받아온 커밋을 살펴보고 싶을때"></a>받아온 커밋을 살펴보고 싶을때</h6><p><strong>fetch를 실행 하게 되면 원격 저장소의 최신 커밋 이력을 이름없는 브랜치로 로컬에 가져오게 된다</strong><br><img src="/image/post/fetch1.png" alt="출처: 누구나쉽게이해할수있는Git입문"></p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout FETCH_HEAR</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout FETCH_HEAD</span><br></pre></td></tr></table></figure>
 
 <br>
 
@@ -1337,7 +1337,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
     
     
-<a id="back-to-top" title="Kembali ke atas" href="javascript:;" target="_blank" rel="noopener">
+<a id="back-to-top" title="Back to Top" href="javascript:;" target="_blank" rel="noopener">
     <i class="fas fa-chevron-up"></i>
 </a>
 <script src="/js/back-to-top.js" defer></script>
