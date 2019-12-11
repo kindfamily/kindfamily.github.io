@@ -8,6 +8,30 @@
     </url>
 
     <url>
+        <loc>https://kindfamily.github.io/2019/12/10/%EC%A0%95%EB%A6%AC/</loc>
+        <lastmod>2019-12-11T04:10:39.955Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://kindfamily.github.io/2019/12/10/vundler%EC%82%AC%EC%9A%A9%EB%B2%95/</loc>
+        <lastmod>2019-12-11T03:25:21.229Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://kindfamily.github.io/2019/11/10/%EC%95%BD%EB%B0%A9%EC%9D%98%EA%B0%90%EC%B4%88markdown/</loc>
+        <lastmod>2019-12-11T01:37:49.167Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://kindfamily.github.io/2019/12/06/191207/</loc>
         <lastmod>2019-12-08T08:31:08.059Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -130,14 +154,6 @@
     <url>
         <loc>https://kindfamily.github.io/2019/11/17/vim/</loc>
         <lastmod>2019-11-26T18:43:15.800Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://kindfamily.github.io/2019/11/10/%EC%95%BD%EB%B0%A9%EC%9D%98%EA%B0%90%EC%B4%88markdown/</loc>
-        <lastmod>2019-11-17T15:58:23.963Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

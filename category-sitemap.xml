@@ -8,6 +8,34 @@
     </url>
 
     <url>
+        <loc>https://kindfamily.github.io/categories/%25EC%25B1%2585/%25EC%25A7%2580%25EC%2598%25A5%25EC%2597%2590%25EC%2584%259C%25EC%2598%25A8git/</loc>
+        <lastmod>2019-12-11T04:10:39.955Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://kindfamily.github.io/categories/%25EC%25B1%2585/</loc>
+        <lastmod>2019-12-11T04:10:39.955Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://kindfamily.github.io/categories/02-%25EC%2596%25B8%25EC%2596%25B4/markdown-%25EC%259E%2591%25EC%2584%25B1%25EC%25A4%2591/</loc>
+        <lastmod>2019-12-11T01:37:49.167Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://kindfamily.github.io/categories/02-%25EC%2596%25B8%25EC%2596%25B4/</loc>
+        <lastmod>2019-12-11T01:37:49.167Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://kindfamily.github.io/categories/TIL/</loc>
         <lastmod>2019-12-08T08:31:08.059Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -38,20 +66,6 @@
     <url>
         <loc>https://kindfamily.github.io/categories/02-%25EC%2596%25B8%25EC%2596%25B4/vim/</loc>
         <lastmod>2019-11-26T18:43:15.800Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://kindfamily.github.io/categories/02-%25EC%2596%25B8%25EC%2596%25B4/</loc>
-        <lastmod>2019-11-26T18:43:15.800Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://kindfamily.github.io/categories/02-%25EC%2596%25B8%25EC%2596%25B4/markdown-%25EC%259E%2591%25EC%2584%25B1%25EC%25A4%2591/</loc>
-        <lastmod>2019-11-17T15:58:23.963Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kindfamily.github.io/"/>
-  <updated>2019-12-08T08:26:27.937Z</updated>
+  <updated>2019-12-11T03:25:21.229Z</updated>
   <id>https://kindfamily.github.io/</id>
   
   <author>
@@ -15,6 +15,69 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vundler사용법</title>
+    <link href="https://kindfamily.github.io/2019/12/10/vundler%EC%82%AC%EC%9A%A9%EB%B2%95/"/>
+    <id>https://kindfamily.github.io/2019/12/10/vundler%EC%82%AC%EC%9A%A9%EB%B2%95/</id>
+    <published>2019-12-10T16:40:48.000Z</published>
+    <updated>2019-12-11T03:25:21.229Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="vundler-사용법"><a href="#vundler-사용법" class="headerlink" title="vundler 사용법"></a>vundler 사용법</h3><hr><h6 id="vim-vunbler-폴더-생성-후-클론"><a href="#vim-vunbler-폴더-생성-후-클론" class="headerlink" title="~/.vim/vunbler 폴더 생성 후 클론"></a>~/.vim/vunbler 폴더 생성 후 클론</h6><p>클론주소</p><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://github.com/VundleVim/Vundle.vim.git</span><br></pre></td></tr></table></figure><br>###### ~/.vimrc 파일 생성 후 샘플 파일 입력 후 저장샘플파일 [링크](https://github.com/VundleVim/Vundle.Vim#quick-start)<br>###### vim으로 파일 열기> plugin설치:PluginInstall<br><h6 id="폴더이동및-파일관리-플러그인-nerdtree"><a href="#폴더이동및-파일관리-플러그인-nerdtree" class="headerlink" title="폴더이동및 파일관리 플러그인 ( nerdtree )"></a>폴더이동및 파일관리 플러그인 ( nerdtree )</h6><p><a href="https://vimawesome.com/plugin/nerdtree-red" target="_blank" rel="noopener">사용법 안내 블로그</a></p><ul><li>실행<ul><li><code>:NERDTree</code></li></ul></li><li>이동<ul><li><code>h/j/k/l</code></li></ul></li><li>선택<ul><li>enter</li></ul></li><li>검색<ul><li><code>/</code></li></ul></li><li>끝내기<ul><li><code>q</code></li></ul></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;vundler-사용법&quot;&gt;&lt;a href=&quot;#vundler-사용법&quot; class=&quot;headerlink&quot; title=&quot;vundler 사용법&quot;&gt;&lt;/a&gt;vundler 사용법&lt;/h3&gt;&lt;hr&gt;
+&lt;h6 id=&quot;vim-vunbler-폴더-생성-후-클론&quot;&gt;
+      
+    
+    </summary>
+    
+    
+    
+      <category term="vim" scheme="https://kindfamily.github.io/tags/vim/"/>
+    
+      <category term="vundler" scheme="https://kindfamily.github.io/tags/vundler/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>fetch</title>
+    <link href="https://kindfamily.github.io/2019/12/10/%EC%A0%95%EB%A6%AC/"/>
+    <id>https://kindfamily.github.io/2019/12/10/%EC%A0%95%EB%A6%AC/</id>
+    <published>2019-12-10T06:29:00.000Z</published>
+    <updated>2019-12-11T04:10:39.955Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="05-깃허브로-협업하기"><a href="#05-깃허브로-협업하기" class="headerlink" title="05 깃허브로 협업하기"></a>05 깃허브로 협업하기</h2><hr><h4 id="fetch"><a href="#fetch" class="headerlink" title="fetch"></a>fetch</h4><p><strong>*doit 지옥에서 온 github 책을 보고 정리한 내용입니다</strong></p><blockquote><p>다른사람이 수정한 소스를 흟어보고 합치고 싶을때 이용한다. 원격저장소의 정보만 가져오는 방식이다. git pull 명령은 git fetch + git merge FETCH_HEAD 명령을 합친것과 같다</p></blockquote><p>** 원격 저장소의 커밋 정보만 받아옴<br>** 다른사람이 수정한 소스를 훓어보고 합치고 싶을때 사용<br>** git pull 명령은 git fetch + git merge FETCH_HEAD 명령을 합친것과 같다</p><a id="more"></a><br><h6 id="받아오기"><a href="#받아오기" class="headerlink" title="받아오기"></a>받아오기</h6><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git fetch</span><br></pre></td></tr></table></figure><br><h6 id="받아온-커밋을-살펴보고-싶을때"><a href="#받아온-커밋을-살펴보고-싶을때" class="headerlink" title="받아온 커밋을 살펴보고 싶을때"></a>받아온 커밋을 살펴보고 싶을때</h6><p><strong>fetch를 실행 하게 되면 원격 저장소의 최신 커밋 이력을 이름없는 브랜치로 로컬에 가져오게 된다</strong><br><img src="/image/post/fetch1.png" alt="출처: 누구나쉽게이해할수있는Git입문"></p><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout FETCH_HEAR</span><br></pre></td></tr></table></figure><br><h6 id="커밋을-합치는-방법1"><a href="#커밋을-합치는-방법1" class="headerlink" title="커밋을 합치는 방법1"></a>커밋을 합치는 방법1</h6><p><strong>master브랜치로 이동해서 merge 명령어로 합치기</strong><br><img src="/image/post/fetch2.png" alt="출처:누구나쉽게이해할수있는GIT입문"></p><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout master // master 브랜치로 이동한다 ( 이미 마스터 브랜치에 있다면 현재위치 유지)</span><br><span class="line">$ git merge FETCH_HEAD // 파일 병합</span><br></pre></td></tr></table></figure><br><h6 id="커밋을-합치는-방법2"><a href="#커밋을-합치는-방법2" class="headerlink" title="커밋을 합치는 방법2"></a>커밋을 합치는 방법2</h6><p><strong>pull 명령어를 이용해서 fetch와 merge를 동시에 실행</strong></p><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git pull</span><br></pre></td></tr></table></figure><br><h6 id="기타-해당-챕터에-나온-명령어"><a href="#기타-해당-챕터에-나온-명령어" class="headerlink" title="기타 해당 챕터에 나온 명령어"></a>기타 해당 챕터에 나온 명령어</h6><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -am              // 스테이지와 커밋을 한꺼번에 할수 있는 명령어</span><br><span class="line">$ git <span class="hljs-built_in">log</span> --oneline           // git <span class="hljs-built_in">log</span>를 한 라인씩 확인</span><br><span class="line">$ git merge origin/브랜치이름    // 병합할 브랜치 이름을 특정</span><br></pre></td></tr></table></figure><p><em>정리: fetch명령어는 협업이나 오픈소스에 기여할때 필수적인 명령어라는 생각이 듭니다. pull 명령이 fetch와 merge를 동시에 진행하는 명령어라는 것을 알게 된게 또한 수확이네요</em></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;05-깃허브로-협업하기&quot;&gt;&lt;a href=&quot;#05-깃허브로-협업하기&quot; class=&quot;headerlink&quot; title=&quot;05 깃허브로 협업하기&quot;&gt;&lt;/a&gt;05 깃허브로 협업하기&lt;/h2&gt;&lt;hr&gt;
+&lt;h4 id=&quot;fetch&quot;&gt;&lt;a href=&quot;#fetch&quot; class=&quot;headerlink&quot; title=&quot;fetch&quot;&gt;&lt;/a&gt;fetch&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;*doit 지옥에서 온 github 책을 보고 정리한 내용입니다&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;다른사람이 수정한 소스를 흟어보고 합치고 싶을때 이용한다. 원격저장소의 정보만 가져오는 방식이다. git pull 명령은 git fetch + git merge FETCH_HEAD 명령을 합친것과 같다&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;** 원격 저장소의 커밋 정보만 받아옴&lt;br&gt;** 다른사람이 수정한 소스를 훓어보고 합치고 싶을때 사용&lt;br&gt;** git pull 명령은 git fetch + git merge FETCH_HEAD 명령을 합친것과 같다&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="책" scheme="https://kindfamily.github.io/categories/%EC%B1%85/"/>
+    
+      <category term="지옥에서온git" scheme="https://kindfamily.github.io/categories/%EC%B1%85/%EC%A7%80%EC%98%A5%EC%97%90%EC%84%9C%EC%98%A8git/"/>
+    
+    
+      <category term="github" scheme="https://kindfamily.github.io/tags/github/"/>
+    
+      <category term="지옥에서온git" scheme="https://kindfamily.github.io/tags/%EC%A7%80%EC%98%A5%EC%97%90%EC%84%9C%EC%98%A8git/"/>
+    
+      <category term="doit" scheme="https://kindfamily.github.io/tags/doit/"/>
+    
+      <category term="책리뷰" scheme="https://kindfamily.github.io/tags/%EC%B1%85%EB%A6%AC%EB%B7%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>191208</title>
@@ -97,6 +160,8 @@
       <category term="TIL" scheme="https://kindfamily.github.io/categories/TIL/"/>
     
     
+      <category term="TIL" scheme="https://kindfamily.github.io/tags/TIL/"/>
+    
       <category term="파이썬웹프로그래밍" scheme="https://kindfamily.github.io/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9B%B9%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/"/>
     
       <category term="python" scheme="https://kindfamily.github.io/tags/python/"/>
@@ -106,8 +171,6 @@
       <category term="youtube" scheme="https://kindfamily.github.io/tags/youtube/"/>
     
       <category term="오픈소스" scheme="https://kindfamily.github.io/tags/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4/"/>
-    
-      <category term="TIL" scheme="https://kindfamily.github.io/tags/TIL/"/>
     
   </entry>
   
@@ -283,15 +346,15 @@
       <category term="TIL" scheme="https://kindfamily.github.io/categories/TIL/"/>
     
     
-      <category term="hexo" scheme="https://kindfamily.github.io/tags/hexo/"/>
-    
       <category term="TIL" scheme="https://kindfamily.github.io/tags/TIL/"/>
+    
+      <category term="githubaction" scheme="https://kindfamily.github.io/tags/githubaction/"/>
+    
+      <category term="hexo" scheme="https://kindfamily.github.io/tags/hexo/"/>
     
       <category term="터미널사용법" scheme="https://kindfamily.github.io/tags/%ED%84%B0%EB%AF%B8%EB%84%90%EC%82%AC%EC%9A%A9%EB%B2%95/"/>
     
       <category term="github" scheme="https://kindfamily.github.io/tags/github/"/>
-    
-      <category term="githubaction" scheme="https://kindfamily.github.io/tags/githubaction/"/>
     
       <category term="githubpackage" scheme="https://kindfamily.github.io/tags/githubpackage/"/>
     
@@ -385,6 +448,8 @@
       <category term="TIL" scheme="https://kindfamily.github.io/categories/TIL/"/>
     
     
+      <category term="TIL" scheme="https://kindfamily.github.io/tags/TIL/"/>
+    
       <category term="파이썬웹프로그래밍" scheme="https://kindfamily.github.io/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9B%B9%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/"/>
     
       <category term="python" scheme="https://kindfamily.github.io/tags/python/"/>
@@ -394,8 +459,6 @@
       <category term="youtube" scheme="https://kindfamily.github.io/tags/youtube/"/>
     
       <category term="오픈소스" scheme="https://kindfamily.github.io/tags/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4/"/>
-    
-      <category term="TIL" scheme="https://kindfamily.github.io/tags/TIL/"/>
     
   </entry>
   
@@ -533,7 +596,7 @@
     <link href="https://kindfamily.github.io/2019/11/10/%EC%95%BD%EB%B0%A9%EC%9D%98%EA%B0%90%EC%B4%88markdown/"/>
     <id>https://kindfamily.github.io/2019/11/10/%EC%95%BD%EB%B0%A9%EC%9D%98%EA%B0%90%EC%B4%88markdown/</id>
     <published>2019-11-10T07:28:01.000Z</published>
-    <updated>2019-11-17T15:58:23.963Z</updated>
+    <updated>2019-12-11T01:37:49.167Z</updated>
     
     <content type="html"><![CDATA[<p><a href="https://heropy.blog/2017/09/30/markdown/" target="_blank" rel="noopener">총정리블로그</a></p><ul><li>제목</li></ul><figure class="highlight markdown hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">제목1</span><br><span class="line">=========</span><br><span class="line"></span><br><span class="line">제목2</span><br><span class="line">---------</span><br></pre></td></tr></table></figure><ul><li>인용문</li></ul><figure class="highlight markdown hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;</span><br></pre></td></tr></table></figure><blockquote><p>인용문</p></blockquote><ul><li>수평선</li></ul><figure class="highlight markdown hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line"><span class="hljs-emphasis">***</span></span><br><span class="line"><span class="hljs-emphasis">___</span></span><br></pre></td></tr></table></figure><hr><hr><hr>]]></content>
     
