@@ -73,7 +73,7 @@
 <link rel="stylesheet" href="/css/style.css">
 <link rel="alternate" href="/atom.xml" title="kindfamily" type="application/atom+xml">
 </head>
-<body class="is-3-column">
+<body class="is-2-column">
     <nav class="navbar navbar-main">
     <div class="container">
         <div class="navbar-brand is-flex-center">
@@ -128,7 +128,7 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
     <div class="card-content">
         <nav class="breadcrumb" aria-label="breadcrumbs">
         <ul>
@@ -431,86 +431,32 @@
 
 
 
+
     
-<div class="card">
-    
-    <div class="card-image">
-        <a href="/2019/11/18/191119/" class="image is-7by1">
-            <img class="thumbnail" src="/image/thumbnail/TIL.jpeg" alt="191119">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-11-18T20:42:32.000Z">2019-11-19</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/TIL/">TIL</a>
-                </div>
-                
-                
-                
-            </div>
+<div class="card card-transparent">
+    <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+        <div class="pagination-previous is-invisible is-hidden-mobile">
+            <a class="is-flex-grow has-text-black-ter" href="/tags/hexo/page/0/">이전</a>
         </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/11/18/191119/">191119</a>
-            
-        </h1>
-        <div class="content">
-            <h3 id="개요"><a href="#개요" class="headerlink" title="개요"></a>개요</h3><hr>
-<ol>
-<li>파이썬 웹프로그래밍</li>
-<li>hexo 유튭영상 구상</li>
-<li>인스타그램 오픈소스 구상</li>
-</ol>
-<br>
-
-<h4 id="파이썬-웹프로그래밍"><a href="#파이썬-웹프로그래밍" class="headerlink" title="파이썬 웹프로그래밍"></a>파이썬 웹프로그래밍</h4><hr>
-<p><strong>06 django 웹 서버의 작동원리( 개정판 저자:김석훈)</strong></p>
-<ul>
-<li>uwsgi<br>운영서버에서 nginx, 아파치 등의 웹서를 이용해서<br>서비스를 가능하도록 해주는 기능이다</li>
-</ul>
-<p>웹서버의 구성과 os에 따라서 구성하는 방법이 조금 달라서 난이도가 있는 내용</p>
-<ul>
-<li>정적파일을 모아주는 명령어</li>
-</ul>
-<p>python manage.py collectstatic</p>
-<ul>
-<li>ALLOWED_HOST=[] 설정이 빈칸으로 되어있을 때<br>ALLOWED_HOST=[‘localhost’, ‘127.0.0.1’]<br>와 같은 내용이다</li>
-</ul>
-<p>-nginx 웹서버와 연동하는 순서<br>gunicorn 프로그램을 이용해서 연동<br>nginx , python-devel, uwsgi 설치<br>nginx, uwsgi 설정</p>
-<p><strong>04 django의 핵심기능</strong><br>요거는 보다가 눈이 시려서 나중에 보려고 목차만 추려놓음<br>4.2 장고 파이썬 쉘로 데이터 조작하기<br>4.4 폼처리하기<br>4.5 클래스형 뷰</p>
-<h4 id="인스타그램클론-저장소-오픈소스-커뮤니티로-만들-계획"><a href="#인스타그램클론-저장소-오픈소스-커뮤니티로-만들-계획" class="headerlink" title="인스타그램클론 저장소 오픈소스 커뮤니티로 만들 계획"></a>인스타그램클론 저장소 오픈소스 커뮤니티로 만들 계획</h4><hr>
-<p>front-end , back-end 폴더로 만들기<br>버전업이 되면 폴더째로 더이상 변경하지 않음</p>
-<p>소스는 누구든 분석하고 변경가능 강의도 제작 가능</p>
-<figure class="highlight markdown hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-section">### 개요</span></span><br><span class="line">------</span><br><span class="line"><span class="hljs-bullet">1. </span>파이썬 웹프로그래밍</span><br><span class="line"><span class="hljs-bullet">1. </span>hexo 유튭영상 구상</span><br><span class="line"><span class="hljs-bullet">1. </span>인스타그램 오픈소스 구상</span><br><span class="line"></span><br><span class="line"><span class="hljs-xml"><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="hljs-section">#### 파이썬 웹프로그래밍</span></span><br><span class="line">------</span><br><span class="line"></span><br><span class="line"><span class="hljs-strong">**06 django 웹 서버의 작동원리( 개정판 저자:김석훈)**</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-bullet">- </span>uwsgi</span><br><span class="line">운영서버에서 nginx, 아파치 등의 웹서를 이용해서</span><br><span class="line">서비스를 가능하도록 해주는 기능이다</span><br><span class="line"></span><br><span class="line">웹서버의 구성과 os에 따라서 구성하는 방법이 조금 달라서 난이도가 있는 내용</span><br><span class="line"></span><br><span class="line"><span class="hljs-bullet">- </span>정적파일을 모아주는 명령어</span><br><span class="line"></span><br><span class="line">python manage.py collectstatic</span><br><span class="line"></span><br><span class="line"><span class="hljs-bullet">- </span>ALLOWED_HOST=[] 설정이 빈칸으로 되어있을 때</span><br><span class="line">ALLOWED_HOST=['localhost', '127.0.0.1']</span><br><span class="line">와 같은 내용이다</span><br><span class="line"></span><br><span class="line">-nginx 웹서버와 연동하는 순서</span><br><span class="line">gunicorn 프로그램을 이용해서 연동</span><br><span class="line">nginx , python-devel, uwsgi 설치 </span><br><span class="line">nginx, uwsgi 설정</span><br><span class="line"></span><br><span class="line"><span class="hljs-strong">**04 django의 핵심기능**</span></span><br><span class="line">요거는 보다가 눈이 시려서 나중에 보려고 목차만 추려놓음</span><br><span class="line">4.2 장고 파이썬 쉘로 데이터 조작하기</span><br><span class="line">4.4 폼처리하기</span><br><span class="line">4.5 클래스형 뷰</span><br><span class="line"></span><br><span class="line"><span class="hljs-section">#### 인스타그램클론 저장소 오픈소스 커뮤니티로 만들 계획</span></span><br><span class="line">------</span><br><span class="line">front-end , back-end 폴더로 만들기</span><br><span class="line">버전업이 되면 폴더째로 더이상 변경하지 않음</span><br><span class="line"></span><br><span class="line">소스는 누구든 분석하고 변경가능 강의도 제작 가능</span><br></pre></td></tr></table></figure>
-
-
+        <div class="pagination-next">
+            <a class="is-flex-grow has-text-black-ter" href="/tags/hexo/page/2/">다음</a>
         </div>
-        
-        
-        
-    </div>
+        <ul class="pagination-list is-hidden-mobile">
+            
+            <li><a class="pagination-link is-current" href="/tags/hexo/">1</a></li>
+            
+            <li><a class="pagination-link has-text-black-ter" href="/tags/hexo/page/2/">2</a></li>
+            
+        </ul>
+    </nav>
 </div>
-
-
-
-
-
-
-
-
 </div>
                 
 
 
 
 
-<div class="column is-4-tablet is-4-desktop is-3-widescreen  has-order-1 column-left ">
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-1 column-left ">
     
         
 <div class="card widget">
@@ -776,691 +722,348 @@
     </div>
 </div>
     
+        <div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            최근 글
+        </h3>
+        
+        <article class="media">
+            
+            <a href="/2019/12/10/vundler%EC%82%AC%EC%9A%A9%EB%B2%95/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/image/post/vundler.jpg" alt="vundler사용법">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-10T16:40:48.000Z">2019-12-11</time></div>
+                    <a href="/2019/12/10/vundler%EC%82%AC%EC%9A%A9%EB%B2%95/" class="title has-link-black-ter is-size-6 has-text-weight-normal">vundler사용법</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/12/10/%EC%A0%95%EB%A6%AC/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/image/post/hellgit.jpg" alt="fetch">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-10T06:29:00.000Z">2019-12-10</time></div>
+                    <a href="/2019/12/10/%EC%A0%95%EB%A6%AC/" class="title has-link-black-ter is-size-6 has-text-weight-normal">fetch</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%EC%B1%85/">책</a> / <a class="has-link-grey -link" href="/categories/%EC%B1%85/%EC%A7%80%EC%98%A5%EC%97%90%EC%84%9C%EC%98%A8git/">지옥에서온git</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/12/07/191208/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/image/thumbnail/TIL.jpeg" alt="191208">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-07T23:12:51.000Z">2019-12-08</time></div>
+                    <a href="/2019/12/07/191208/" class="title has-link-black-ter is-size-6 has-text-weight-normal">191208</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/TIL/">TIL</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/12/06/191207/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/image/thumbnail/TIL.jpeg" alt="191207">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-06T06:19:29.000Z">2019-12-06</time></div>
+                    <a href="/2019/12/06/191207/" class="title has-link-black-ter is-size-6 has-text-weight-normal">191207</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/TIL/">TIL</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/12/04/191204/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/image/thumbnail/TIL.jpeg" alt="191204">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-04T05:41:02.000Z">2019-12-04</time></div>
+                    <a href="/2019/12/04/191204/" class="title has-link-black-ter is-size-6 has-text-weight-normal">191204</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/TIL/">TIL</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+    </div>
+</div>
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            아카이브
+        </h3>
+        <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/12/">
+                <span class="level-start">
+                    <span class="level-item">12월 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">5</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/11/">
+                <span class="level-start">
+                    <span class="level-item">11월 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">15</span>
+                </span>
+            </a>
+        </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                태그
+            </h3>
+            <div class="field is-grouped is-grouped-multiline">
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/TIL/">
+                        <span class="tag">TIL</span>
+                        <span class="tag is-grey">6</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/aws/">
+                        <span class="tag">aws</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/disqus/">
+                        <span class="tag">disqus</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/django/">
+                        <span class="tag">django</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/doit/">
+                        <span class="tag">doit</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/github/">
+                        <span class="tag">github</span>
+                        <span class="tag is-grey">4</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/githubaction/">
+                        <span class="tag">githubaction</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/githubpackage/">
+                        <span class="tag">githubpackage</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/goormide/">
+                        <span class="tag">goormide</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/hexo/">
+                        <span class="tag">hexo</span>
+                        <span class="tag is-grey">6</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/mac/">
+                        <span class="tag">mac</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/markdown/">
+                        <span class="tag">markdown</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/python/">
+                        <span class="tag">python</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/pythonanywhere/">
+                        <span class="tag">pythonanywhere</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/ssh/">
+                        <span class="tag">ssh</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/vim/">
+                        <span class="tag">vim</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/vsc/">
+                        <span class="tag">vsc</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/vundler/">
+                        <span class="tag">vundler</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/youtube/">
+                        <span class="tag">youtube</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4/">
+                        <span class="tag">오픈소스</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%EC%9E%A5%EA%B3%A0%EB%B0%B0%ED%8F%AC/">
+                        <span class="tag">장고배포</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%EC%A7%80%EC%98%A5%EC%97%90%EC%84%9C%EC%98%A8git/">
+                        <span class="tag">지옥에서온git</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%EC%B1%85%EB%A6%AC%EB%B7%B0/">
+                        <span class="tag">책리뷰</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%ED%84%B0%EB%AF%B8%EB%84%90%EC%82%AC%EC%9A%A9%EB%B2%95/">
+                        <span class="tag">터미널사용법</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9B%B9%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/">
+                        <span class="tag">파이썬웹프로그래밍</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%ED%95%99%EC%8A%B5%EC%9E%90%EB%A3%8C/">
+                        <span class="tag">학습자료</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+    
     
         <div class="column-right-shadow is-hidden-widescreen ">
         
-            <div class="card widget">
-    <div class="card-content">
-        <h3 class="menu-label">
-            최근 글
-        </h3>
-        
-        <article class="media">
-            
-            <a href="/2019/12/10/vundler%EC%82%AC%EC%9A%A9%EB%B2%95/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/image/post/vundler.jpg" alt="vundler사용법">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-10T16:40:48.000Z">2019-12-11</time></div>
-                    <a href="/2019/12/10/vundler%EC%82%AC%EC%9A%A9%EB%B2%95/" class="title has-link-black-ter is-size-6 has-text-weight-normal">vundler사용법</a>
-                    <p class="is-size-7 is-uppercase">
-                        
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/12/10/%EC%A0%95%EB%A6%AC/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/image/post/hellgit.jpg" alt="fetch">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-10T06:29:00.000Z">2019-12-10</time></div>
-                    <a href="/2019/12/10/%EC%A0%95%EB%A6%AC/" class="title has-link-black-ter is-size-6 has-text-weight-normal">fetch</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/%EC%B1%85/">책</a> / <a class="has-link-grey -link" href="/categories/%EC%B1%85/%EC%A7%80%EC%98%A5%EC%97%90%EC%84%9C%EC%98%A8git/">지옥에서온git</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/12/07/191208/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/image/thumbnail/TIL.jpeg" alt="191208">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-07T23:12:51.000Z">2019-12-08</time></div>
-                    <a href="/2019/12/07/191208/" class="title has-link-black-ter is-size-6 has-text-weight-normal">191208</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/TIL/">TIL</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/12/06/191207/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/image/thumbnail/TIL.jpeg" alt="191207">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-06T06:19:29.000Z">2019-12-06</time></div>
-                    <a href="/2019/12/06/191207/" class="title has-link-black-ter is-size-6 has-text-weight-normal">191207</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/TIL/">TIL</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/12/04/191204/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/image/thumbnail/TIL.jpeg" alt="191204">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-04T05:41:02.000Z">2019-12-04</time></div>
-                    <a href="/2019/12/04/191204/" class="title has-link-black-ter is-size-6 has-text-weight-normal">191204</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/TIL/">TIL</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-    </div>
-</div>
-        
-            <div class="card widget">
-    <div class="card-content">
-        <div class="menu">
-        <h3 class="menu-label">
-            아카이브
-        </h3>
-        <ul class="menu-list">
-        
-        <li>
-            <a class="level is-marginless" href="/archives/2019/12/">
-                <span class="level-start">
-                    <span class="level-item">12월 2019</span>
-                </span>
-                <span class="level-end">
-                    <span class="level-item tag">5</span>
-                </span>
-            </a>
-        </li>
-        
-        <li>
-            <a class="level is-marginless" href="/archives/2019/11/">
-                <span class="level-start">
-                    <span class="level-item">11월 2019</span>
-                </span>
-                <span class="level-end">
-                    <span class="level-item tag">15</span>
-                </span>
-            </a>
-        </li>
-        
-        </ul>
-        </div>
-    </div>
-</div>
-        
-            <div class="card widget">
-    <div class="card-content">
-        <div class="menu">
-            <h3 class="menu-label">
-                태그
-            </h3>
-            <div class="field is-grouped is-grouped-multiline">
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/TIL/">
-                        <span class="tag">TIL</span>
-                        <span class="tag is-grey">6</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/aws/">
-                        <span class="tag">aws</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/disqus/">
-                        <span class="tag">disqus</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/django/">
-                        <span class="tag">django</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/doit/">
-                        <span class="tag">doit</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/github/">
-                        <span class="tag">github</span>
-                        <span class="tag is-grey">4</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/githubaction/">
-                        <span class="tag">githubaction</span>
-                        <span class="tag is-grey">2</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/githubpackage/">
-                        <span class="tag">githubpackage</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/goormide/">
-                        <span class="tag">goormide</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/hexo/">
-                        <span class="tag">hexo</span>
-                        <span class="tag is-grey">6</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/mac/">
-                        <span class="tag">mac</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/markdown/">
-                        <span class="tag">markdown</span>
-                        <span class="tag is-grey">3</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/python/">
-                        <span class="tag">python</span>
-                        <span class="tag is-grey">2</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/pythonanywhere/">
-                        <span class="tag">pythonanywhere</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/ssh/">
-                        <span class="tag">ssh</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/vim/">
-                        <span class="tag">vim</span>
-                        <span class="tag is-grey">3</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/vsc/">
-                        <span class="tag">vsc</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/vundler/">
-                        <span class="tag">vundler</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/youtube/">
-                        <span class="tag">youtube</span>
-                        <span class="tag is-grey">2</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4/">
-                        <span class="tag">오픈소스</span>
-                        <span class="tag is-grey">2</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/%EC%9E%A5%EA%B3%A0%EB%B0%B0%ED%8F%AC/">
-                        <span class="tag">장고배포</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/%EC%A7%80%EC%98%A5%EC%97%90%EC%84%9C%EC%98%A8git/">
-                        <span class="tag">지옥에서온git</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/%EC%B1%85%EB%A6%AC%EB%B7%B0/">
-                        <span class="tag">책리뷰</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/%ED%84%B0%EB%AF%B8%EB%84%90%EC%82%AC%EC%9A%A9%EB%B2%95/">
-                        <span class="tag">터미널사용법</span>
-                        <span class="tag is-grey">2</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9B%B9%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/">
-                        <span class="tag">파이썬웹프로그래밍</span>
-                        <span class="tag is-grey">2</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/%ED%95%99%EC%8A%B5%EC%9E%90%EB%A3%8C/">
-                        <span class="tag">학습자료</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-</div>
-        
         </div>
     
 </div>
 
                 
-
-
-
-
-<div class="column is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only has-order-3 column-right ">
-    
-        <div class="card widget">
-    <div class="card-content">
-        <h3 class="menu-label">
-            최근 글
-        </h3>
-        
-        <article class="media">
-            
-            <a href="/2019/12/10/vundler%EC%82%AC%EC%9A%A9%EB%B2%95/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/image/post/vundler.jpg" alt="vundler사용법">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-10T16:40:48.000Z">2019-12-11</time></div>
-                    <a href="/2019/12/10/vundler%EC%82%AC%EC%9A%A9%EB%B2%95/" class="title has-link-black-ter is-size-6 has-text-weight-normal">vundler사용법</a>
-                    <p class="is-size-7 is-uppercase">
-                        
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/12/10/%EC%A0%95%EB%A6%AC/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/image/post/hellgit.jpg" alt="fetch">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-10T06:29:00.000Z">2019-12-10</time></div>
-                    <a href="/2019/12/10/%EC%A0%95%EB%A6%AC/" class="title has-link-black-ter is-size-6 has-text-weight-normal">fetch</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/%EC%B1%85/">책</a> / <a class="has-link-grey -link" href="/categories/%EC%B1%85/%EC%A7%80%EC%98%A5%EC%97%90%EC%84%9C%EC%98%A8git/">지옥에서온git</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/12/07/191208/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/image/thumbnail/TIL.jpeg" alt="191208">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-07T23:12:51.000Z">2019-12-08</time></div>
-                    <a href="/2019/12/07/191208/" class="title has-link-black-ter is-size-6 has-text-weight-normal">191208</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/TIL/">TIL</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/12/06/191207/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/image/thumbnail/TIL.jpeg" alt="191207">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-06T06:19:29.000Z">2019-12-06</time></div>
-                    <a href="/2019/12/06/191207/" class="title has-link-black-ter is-size-6 has-text-weight-normal">191207</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/TIL/">TIL</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/12/04/191204/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/image/thumbnail/TIL.jpeg" alt="191204">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-04T05:41:02.000Z">2019-12-04</time></div>
-                    <a href="/2019/12/04/191204/" class="title has-link-black-ter is-size-6 has-text-weight-normal">191204</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/TIL/">TIL</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-    </div>
-</div>
-    
-        <div class="card widget">
-    <div class="card-content">
-        <div class="menu">
-        <h3 class="menu-label">
-            아카이브
-        </h3>
-        <ul class="menu-list">
-        
-        <li>
-            <a class="level is-marginless" href="/archives/2019/12/">
-                <span class="level-start">
-                    <span class="level-item">12월 2019</span>
-                </span>
-                <span class="level-end">
-                    <span class="level-item tag">5</span>
-                </span>
-            </a>
-        </li>
-        
-        <li>
-            <a class="level is-marginless" href="/archives/2019/11/">
-                <span class="level-start">
-                    <span class="level-item">11월 2019</span>
-                </span>
-                <span class="level-end">
-                    <span class="level-item tag">15</span>
-                </span>
-            </a>
-        </li>
-        
-        </ul>
-        </div>
-    </div>
-</div>
-    
-        <div class="card widget">
-    <div class="card-content">
-        <div class="menu">
-            <h3 class="menu-label">
-                태그
-            </h3>
-            <div class="field is-grouped is-grouped-multiline">
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/TIL/">
-                        <span class="tag">TIL</span>
-                        <span class="tag is-grey">6</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/aws/">
-                        <span class="tag">aws</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/disqus/">
-                        <span class="tag">disqus</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/django/">
-                        <span class="tag">django</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/doit/">
-                        <span class="tag">doit</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/github/">
-                        <span class="tag">github</span>
-                        <span class="tag is-grey">4</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/githubaction/">
-                        <span class="tag">githubaction</span>
-                        <span class="tag is-grey">2</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/githubpackage/">
-                        <span class="tag">githubpackage</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/goormide/">
-                        <span class="tag">goormide</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/hexo/">
-                        <span class="tag">hexo</span>
-                        <span class="tag is-grey">6</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/mac/">
-                        <span class="tag">mac</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/markdown/">
-                        <span class="tag">markdown</span>
-                        <span class="tag is-grey">3</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/python/">
-                        <span class="tag">python</span>
-                        <span class="tag is-grey">2</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/pythonanywhere/">
-                        <span class="tag">pythonanywhere</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/ssh/">
-                        <span class="tag">ssh</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/vim/">
-                        <span class="tag">vim</span>
-                        <span class="tag is-grey">3</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/vsc/">
-                        <span class="tag">vsc</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/vundler/">
-                        <span class="tag">vundler</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/youtube/">
-                        <span class="tag">youtube</span>
-                        <span class="tag is-grey">2</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4/">
-                        <span class="tag">오픈소스</span>
-                        <span class="tag is-grey">2</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/%EC%9E%A5%EA%B3%A0%EB%B0%B0%ED%8F%AC/">
-                        <span class="tag">장고배포</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/%EC%A7%80%EC%98%A5%EC%97%90%EC%84%9C%EC%98%A8git/">
-                        <span class="tag">지옥에서온git</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/%EC%B1%85%EB%A6%AC%EB%B7%B0/">
-                        <span class="tag">책리뷰</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/%ED%84%B0%EB%AF%B8%EB%84%90%EC%82%AC%EC%9A%A9%EB%B2%95/">
-                        <span class="tag">터미널사용법</span>
-                        <span class="tag is-grey">2</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9B%B9%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/">
-                        <span class="tag">파이썬웹프로그래밍</span>
-                        <span class="tag is-grey">2</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/%ED%95%99%EC%8A%B5%EC%9E%90%EB%A3%8C/">
-                        <span class="tag">학습자료</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-</div>
-    
-    
-</div>
-
             </div>
         </div>
     </section>
