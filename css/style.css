@@ -17,7 +17,6 @@ textarea {
 @media screen and (min-width: 1280px) {
   .is-1-column .container,
   .is-2-column .container {
-    margin: 0px;
     max-width: 1024px;
     width: 1024px;
   }
