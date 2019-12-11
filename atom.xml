@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kindfamily.github.io/"/>
-  <updated>2019-12-11T03:25:21.229Z</updated>
+  <updated>2019-12-11T04:40:01.688Z</updated>
   <id>https://kindfamily.github.io/</id>
   
   <author>
@@ -21,17 +21,26 @@
     <link href="https://kindfamily.github.io/2019/12/10/vundler%EC%82%AC%EC%9A%A9%EB%B2%95/"/>
     <id>https://kindfamily.github.io/2019/12/10/vundler%EC%82%AC%EC%9A%A9%EB%B2%95/</id>
     <published>2019-12-10T16:40:48.000Z</published>
-    <updated>2019-12-11T03:25:21.229Z</updated>
+    <updated>2019-12-11T04:40:01.688Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="vundler-사용법"><a href="#vundler-사용법" class="headerlink" title="vundler 사용법"></a>vundler 사용법</h3><hr><h6 id="vim-vunbler-폴더-생성-후-클론"><a href="#vim-vunbler-폴더-생성-후-클론" class="headerlink" title="~/.vim/vunbler 폴더 생성 후 클론"></a>~/.vim/vunbler 폴더 생성 후 클론</h6><p>클론주소</p><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://github.com/VundleVim/Vundle.vim.git</span><br></pre></td></tr></table></figure><br>###### ~/.vimrc 파일 생성 후 샘플 파일 입력 후 저장샘플파일 [링크](https://github.com/VundleVim/Vundle.Vim#quick-start)<br>###### vim으로 파일 열기> plugin설치:PluginInstall<br><h6 id="폴더이동및-파일관리-플러그인-nerdtree"><a href="#폴더이동및-파일관리-플러그인-nerdtree" class="headerlink" title="폴더이동및 파일관리 플러그인 ( nerdtree )"></a>폴더이동및 파일관리 플러그인 ( nerdtree )</h6><p><a href="https://vimawesome.com/plugin/nerdtree-red" target="_blank" rel="noopener">사용법 안내 블로그</a></p><ul><li>실행<ul><li><code>:NERDTree</code></li></ul></li><li>이동<ul><li><code>h/j/k/l</code></li></ul></li><li>선택<ul><li>enter</li></ul></li><li>검색<ul><li><code>/</code></li></ul></li><li>끝내기<ul><li><code>q</code></li></ul></li></ul>]]></content>
+    <content type="html"><![CDATA[<h3 id="vundler-사용법"><a href="#vundler-사용법" class="headerlink" title="vundler 사용법"></a>vundler 사용법</h3><hr><h6 id="vim-vunbler-폴더-생성-후-클론"><a href="#vim-vunbler-폴더-생성-후-클론" class="headerlink" title="~/.vim/vunbler 폴더 생성 후 클론"></a>~/.vim/vunbler 폴더 생성 후 클론</h6><p>클론주소</p><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://github.com/VundleVim/Vundle.vim.git</span><br></pre></td></tr></table></figure><br>###### ~/.vimrc 파일 생성 후 샘플 파일 입력 후 저장<p>샘플파일 <a href="https://github.com/VundleVim/Vundle.Vim#quick-start" target="_blank" rel="noopener">링크</a></p><br>###### vim으로 파일 열기> plugin설치:PluginInstall<br><h6 id="폴더이동및-파일관리-플러그인-nerdtree"><a href="#폴더이동및-파일관리-플러그인-nerdtree" class="headerlink" title="폴더이동및 파일관리 플러그인 ( nerdtree )"></a>폴더이동및 파일관리 플러그인 ( nerdtree )</h6><p><a href="https://vimawesome.com/plugin/nerdtree-red" target="_blank" rel="noopener">사용법 안내 블로그</a></p><a id="more"></a><ul><li>실행<ul><li><code>:NERDTree</code></li></ul></li><li>이동<ul><li><code>h/j/k/l</code></li></ul></li><li>선택<ul><li>enter</li></ul></li><li>검색<ul><li><code>/</code></li></ul></li><li>끝내기<ul><li><code>q</code></li></ul></li></ul>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;h3 id=&quot;vundler-사용법&quot;&gt;&lt;a href=&quot;#vundler-사용법&quot; class=&quot;headerlink&quot; title=&quot;vundler 사용법&quot;&gt;&lt;/a&gt;vundler 사용법&lt;/h3&gt;&lt;hr&gt;
-&lt;h6 id=&quot;vim-vunbler-폴더-생성-후-클론&quot;&gt;
-      
+      &lt;h3 id=&quot;vundler-사용법&quot;&gt;&lt;a href=&quot;#vundler-사용법&quot; class=&quot;headerlink&quot; title=&quot;vundler 사용법&quot;&gt;&lt;/a&gt;vundler 사용법&lt;/h3&gt;&lt;hr&gt;
+&lt;h6 id=&quot;vim-vunbler-폴더-생성-후-클론&quot;&gt;&lt;a href=&quot;#vim-vunbler-폴더-생성-후-클론&quot; class=&quot;headerlink&quot; title=&quot;~/.vim/vunbler 폴더 생성 후 클론&quot;&gt;&lt;/a&gt;~/.vim/vunbler 폴더 생성 후 클론&lt;/h6&gt;&lt;p&gt;클론주소&lt;/p&gt;
+&lt;figure class=&quot;highlight plain hljs&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;https://github.com/VundleVim/Vundle.vim.git&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;br&gt;
+###### ~/.vimrc 파일 생성 후 샘플 파일 입력 후 저장
+
+&lt;p&gt;샘플파일 &lt;a href=&quot;https://github.com/VundleVim/Vundle.Vim#quick-start&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;링크&lt;/a&gt;&lt;/p&gt;
+&lt;br&gt;
+###### vim으로 파일 열기&gt; plugin설치
+:PluginInstall
+
+&lt;br&gt;
+
+&lt;h6 id=&quot;폴더이동및-파일관리-플러그인-nerdtree&quot;&gt;&lt;a href=&quot;#폴더이동및-파일관리-플러그인-nerdtree&quot; class=&quot;headerlink&quot; title=&quot;폴더이동및 파일관리 플러그인 ( nerdtree )&quot;&gt;&lt;/a&gt;폴더이동및 파일관리 플러그인 ( nerdtree )&lt;/h6&gt;&lt;p&gt;&lt;a href=&quot;https://vimawesome.com/plugin/nerdtree-red&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;사용법 안내 블로그&lt;/a&gt;&lt;/p&gt;
     
     </summary>
     
@@ -48,14 +57,13 @@
     <link href="https://kindfamily.github.io/2019/12/10/%EC%A0%95%EB%A6%AC/"/>
     <id>https://kindfamily.github.io/2019/12/10/%EC%A0%95%EB%A6%AC/</id>
     <published>2019-12-10T06:29:00.000Z</published>
-    <updated>2019-12-11T04:10:39.955Z</updated>
+    <updated>2019-12-11T05:17:17.282Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="05-깃허브로-협업하기"><a href="#05-깃허브로-협업하기" class="headerlink" title="05 깃허브로 협업하기"></a>05 깃허브로 협업하기</h2><hr><h4 id="fetch"><a href="#fetch" class="headerlink" title="fetch"></a>fetch</h4><p><strong>*doit 지옥에서 온 github 책을 보고 정리한 내용입니다</strong></p><blockquote><p>다른사람이 수정한 소스를 흟어보고 합치고 싶을때 이용한다. 원격저장소의 정보만 가져오는 방식이다. git pull 명령은 git fetch + git merge FETCH_HEAD 명령을 합친것과 같다</p></blockquote><p>** 원격 저장소의 커밋 정보만 받아옴<br>** 다른사람이 수정한 소스를 훓어보고 합치고 싶을때 사용<br>** git pull 명령은 git fetch + git merge FETCH_HEAD 명령을 합친것과 같다</p><a id="more"></a><br><h6 id="받아오기"><a href="#받아오기" class="headerlink" title="받아오기"></a>받아오기</h6><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git fetch</span><br></pre></td></tr></table></figure><br><h6 id="받아온-커밋을-살펴보고-싶을때"><a href="#받아온-커밋을-살펴보고-싶을때" class="headerlink" title="받아온 커밋을 살펴보고 싶을때"></a>받아온 커밋을 살펴보고 싶을때</h6><p><strong>fetch를 실행 하게 되면 원격 저장소의 최신 커밋 이력을 이름없는 브랜치로 로컬에 가져오게 된다</strong><br><img src="/image/post/fetch1.png" alt="출처: 누구나쉽게이해할수있는Git입문"></p><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout FETCH_HEAR</span><br></pre></td></tr></table></figure><br><h6 id="커밋을-합치는-방법1"><a href="#커밋을-합치는-방법1" class="headerlink" title="커밋을 합치는 방법1"></a>커밋을 합치는 방법1</h6><p><strong>master브랜치로 이동해서 merge 명령어로 합치기</strong><br><img src="/image/post/fetch2.png" alt="출처:누구나쉽게이해할수있는GIT입문"></p><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout master // master 브랜치로 이동한다 ( 이미 마스터 브랜치에 있다면 현재위치 유지)</span><br><span class="line">$ git merge FETCH_HEAD // 파일 병합</span><br></pre></td></tr></table></figure><br><h6 id="커밋을-합치는-방법2"><a href="#커밋을-합치는-방법2" class="headerlink" title="커밋을 합치는 방법2"></a>커밋을 합치는 방법2</h6><p><strong>pull 명령어를 이용해서 fetch와 merge를 동시에 실행</strong></p><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git pull</span><br></pre></td></tr></table></figure><br><h6 id="기타-해당-챕터에-나온-명령어"><a href="#기타-해당-챕터에-나온-명령어" class="headerlink" title="기타 해당 챕터에 나온 명령어"></a>기타 해당 챕터에 나온 명령어</h6><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -am              // 스테이지와 커밋을 한꺼번에 할수 있는 명령어</span><br><span class="line">$ git <span class="hljs-built_in">log</span> --oneline           // git <span class="hljs-built_in">log</span>를 한 라인씩 확인</span><br><span class="line">$ git merge origin/브랜치이름    // 병합할 브랜치 이름을 특정</span><br></pre></td></tr></table></figure><p><em>정리: fetch명령어는 협업이나 오픈소스에 기여할때 필수적인 명령어라는 생각이 듭니다. pull 명령이 fetch와 merge를 동시에 진행하는 명령어라는 것을 알게 된게 또한 수확이네요</em></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="do-it-지옥에서-온-github-책을-보고-fetch-명령어에-대해서-정리한-내용입니다"><a href="#do-it-지옥에서-온-github-책을-보고-fetch-명령어에-대해서-정리한-내용입니다" class="headerlink" title="do-it 지옥에서 온 github 책을 보고 fetch 명령어에 대해서 정리한 내용입니다"></a>do-it 지옥에서 온 github 책을 보고 fetch 명령어에 대해서 정리한 내용입니다</h2><h2 id="책구매링크"><a href="#책구매링크" class="headerlink" title="책구매링크"></a><a href="http://www.yes24.com/Product/Goods/84803146?Acode=101" target="_blank" rel="noopener">책구매링크</a></h2><h3 id="05-깃허브로-협업하기-챕터를-읽고-fetch에-대해서-정리"><a href="#05-깃허브로-협업하기-챕터를-읽고-fetch에-대해서-정리" class="headerlink" title="05 깃허브로 협업하기 챕터를 읽고 fetch에 대해서 정리"></a>05 깃허브로 협업하기 챕터를 읽고 fetch에 대해서 정리</h3><hr><blockquote><p>다른사람이 수정한 소스를 흟어보고 합치고 싶을때 이용한다. 원격저장소의 정보만 가져오는 방식이다. git pull 명령은 git fetch + git merge FETCH_HEAD 명령을 합친것과 같다</p></blockquote><p>** 원격 저장소의 커밋 정보만 받아옴<br>** 다른사람이 수정한 소스를 훓어보고 합치고 싶을때 사용<br>** git pull 명령은 git fetch + git merge FETCH_HEAD 명령을 합친것과 같다</p><a id="more"></a><br><h6 id="받아오기"><a href="#받아오기" class="headerlink" title="받아오기"></a>받아오기</h6><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git fetch</span><br></pre></td></tr></table></figure><br><h6 id="받아온-커밋을-살펴보고-싶을때"><a href="#받아온-커밋을-살펴보고-싶을때" class="headerlink" title="받아온 커밋을 살펴보고 싶을때"></a>받아온 커밋을 살펴보고 싶을때</h6><p><strong>fetch를 실행 하게 되면 원격 저장소의 최신 커밋 이력을 이름없는 브랜치로 로컬에 가져오게 된다</strong><br><img src="/image/post/fetch1.png" alt="출처: 누구나쉽게이해할수있는Git입문"></p><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout FETCH_HEAR</span><br></pre></td></tr></table></figure><br><h6 id="커밋을-합치는-방법1"><a href="#커밋을-합치는-방법1" class="headerlink" title="커밋을 합치는 방법1"></a>커밋을 합치는 방법1</h6><p><strong>master브랜치로 이동해서 merge 명령어로 합치기</strong><br><img src="/image/post/fetch2.png" alt="출처:누구나쉽게이해할수있는GIT입문"></p><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout master // master 브랜치로 이동한다 ( 이미 마스터 브랜치에 있다면 현재위치 유지)</span><br><span class="line">$ git merge FETCH_HEAD // 파일 병합</span><br></pre></td></tr></table></figure><br><h6 id="커밋을-합치는-방법2"><a href="#커밋을-합치는-방법2" class="headerlink" title="커밋을 합치는 방법2"></a>커밋을 합치는 방법2</h6><p><strong>pull 명령어를 이용해서 fetch와 merge를 동시에 실행</strong></p><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git pull</span><br></pre></td></tr></table></figure><br><h6 id="기타-해당-챕터에-나온-명령어"><a href="#기타-해당-챕터에-나온-명령어" class="headerlink" title="기타 해당 챕터에 나온 명령어"></a>기타 해당 챕터에 나온 명령어</h6><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -am              // 스테이지와 커밋을 한꺼번에 할수 있는 명령어</span><br><span class="line">$ git <span class="hljs-built_in">log</span> --oneline           // git <span class="hljs-built_in">log</span>를 한 라인씩 확인</span><br><span class="line">$ git merge origin/브랜치이름    // 병합할 브랜치 이름을 특정</span><br></pre></td></tr></table></figure><p><em>정리: fetch명령어는 협업이나 오픈소스에 기여할때 필수적인 명령어라는 생각이 듭니다. pull 명령이 fetch와 merge를 동시에 진행하는 명령어라는 것을 알게 된게 또한 수확이네요</em></p>]]></content>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;05-깃허브로-협업하기&quot;&gt;&lt;a href=&quot;#05-깃허브로-협업하기&quot; class=&quot;headerlink&quot; title=&quot;05 깃허브로 협업하기&quot;&gt;&lt;/a&gt;05 깃허브로 협업하기&lt;/h2&gt;&lt;hr&gt;
-&lt;h4 id=&quot;fetch&quot;&gt;&lt;a href=&quot;#fetch&quot; class=&quot;headerlink&quot; title=&quot;fetch&quot;&gt;&lt;/a&gt;fetch&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;*doit 지옥에서 온 github 책을 보고 정리한 내용입니다&lt;/strong&gt;&lt;/p&gt;
+      &lt;h2 id=&quot;do-it-지옥에서-온-github-책을-보고-fetch-명령어에-대해서-정리한-내용입니다&quot;&gt;&lt;a href=&quot;#do-it-지옥에서-온-github-책을-보고-fetch-명령어에-대해서-정리한-내용입니다&quot; class=&quot;headerlink&quot; title=&quot;do-it 지옥에서 온 github 책을 보고 fetch 명령어에 대해서 정리한 내용입니다&quot;&gt;&lt;/a&gt;do-it 지옥에서 온 github 책을 보고 fetch 명령어에 대해서 정리한 내용입니다&lt;/h2&gt;&lt;h2 id=&quot;책구매링크&quot;&gt;&lt;a href=&quot;#책구매링크&quot; class=&quot;headerlink&quot; title=&quot;책구매링크&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://www.yes24.com/Product/Goods/84803146?Acode=101&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;책구매링크&lt;/a&gt;&lt;/h2&gt;&lt;h3 id=&quot;05-깃허브로-협업하기-챕터를-읽고-fetch에-대해서-정리&quot;&gt;&lt;a href=&quot;#05-깃허브로-협업하기-챕터를-읽고-fetch에-대해서-정리&quot; class=&quot;headerlink&quot; title=&quot;05 깃허브로 협업하기 챕터를 읽고 fetch에 대해서 정리&quot;&gt;&lt;/a&gt;05 깃허브로 협업하기 챕터를 읽고 fetch에 대해서 정리&lt;/h3&gt;&lt;hr&gt;
 &lt;blockquote&gt;
 &lt;p&gt;다른사람이 수정한 소스를 흟어보고 합치고 싶을때 이용한다. 원격저장소의 정보만 가져오는 방식이다. git pull 명령은 git fetch + git merge FETCH_HEAD 명령을 합친것과 같다&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -162,11 +170,11 @@
     
       <category term="TIL" scheme="https://kindfamily.github.io/tags/TIL/"/>
     
+      <category term="hexo" scheme="https://kindfamily.github.io/tags/hexo/"/>
+    
       <category term="파이썬웹프로그래밍" scheme="https://kindfamily.github.io/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9B%B9%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/"/>
     
       <category term="python" scheme="https://kindfamily.github.io/tags/python/"/>
-    
-      <category term="hexo" scheme="https://kindfamily.github.io/tags/hexo/"/>
     
       <category term="youtube" scheme="https://kindfamily.github.io/tags/youtube/"/>
     
@@ -348,15 +356,15 @@
     
       <category term="TIL" scheme="https://kindfamily.github.io/tags/TIL/"/>
     
-      <category term="githubaction" scheme="https://kindfamily.github.io/tags/githubaction/"/>
-    
-      <category term="hexo" scheme="https://kindfamily.github.io/tags/hexo/"/>
-    
       <category term="터미널사용법" scheme="https://kindfamily.github.io/tags/%ED%84%B0%EB%AF%B8%EB%84%90%EC%82%AC%EC%9A%A9%EB%B2%95/"/>
     
       <category term="github" scheme="https://kindfamily.github.io/tags/github/"/>
     
+      <category term="githubaction" scheme="https://kindfamily.github.io/tags/githubaction/"/>
+    
       <category term="githubpackage" scheme="https://kindfamily.github.io/tags/githubpackage/"/>
+    
+      <category term="hexo" scheme="https://kindfamily.github.io/tags/hexo/"/>
     
   </entry>
   
@@ -450,11 +458,11 @@
     
       <category term="TIL" scheme="https://kindfamily.github.io/tags/TIL/"/>
     
+      <category term="hexo" scheme="https://kindfamily.github.io/tags/hexo/"/>
+    
       <category term="파이썬웹프로그래밍" scheme="https://kindfamily.github.io/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9B%B9%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/"/>
     
       <category term="python" scheme="https://kindfamily.github.io/tags/python/"/>
-    
-      <category term="hexo" scheme="https://kindfamily.github.io/tags/hexo/"/>
     
       <category term="youtube" scheme="https://kindfamily.github.io/tags/youtube/"/>
     
@@ -494,9 +502,9 @@
     
       <category term="TIL" scheme="https://kindfamily.github.io/tags/TIL/"/>
     
-      <category term="markdown" scheme="https://kindfamily.github.io/tags/markdown/"/>
-    
       <category term="github" scheme="https://kindfamily.github.io/tags/github/"/>
+    
+      <category term="markdown" scheme="https://kindfamily.github.io/tags/markdown/"/>
     
   </entry>
   
