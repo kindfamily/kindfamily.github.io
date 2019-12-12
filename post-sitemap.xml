@@ -8,16 +8,16 @@
     </url>
 
     <url>
-        <loc>https://kindfamily.github.io/2019/12/10/vundler%EC%82%AC%EC%9A%A9%EB%B2%95/</loc>
-        <lastmod>2019-12-12T01:04:44.841Z</lastmod>
+        <loc>https://kindfamily.github.io/2019/12/10/%EC%A0%95%EB%A6%AC/</loc>
+        <lastmod>2019-12-12T01:36:56.781Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://kindfamily.github.io/2019/12/10/%EC%A0%95%EB%A6%AC/</loc>
-        <lastmod>2019-12-11T06:11:32.058Z</lastmod>
+        <loc>https://kindfamily.github.io/2019/11/17/vim/</loc>
+        <lastmod>2019-12-12T01:35:44.103Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -25,7 +25,31 @@
 
     <url>
         <loc>https://kindfamily.github.io/2019/11/10/%EC%95%BD%EB%B0%A9%EC%9D%98%EA%B0%90%EC%B4%88markdown/</loc>
-        <lastmod>2019-12-11T01:37:49.167Z</lastmod>
+        <lastmod>2019-12-12T01:35:18.877Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://kindfamily.github.io/2019/11/10/%EB%9D%BC%EC%9D%B4%ED%8A%B8%EC%84%B8%EC%9D%BC/</loc>
+        <lastmod>2019-12-12T01:35:06.580Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://kindfamily.github.io/2019/11/10/%EA%B5%AC%EB%A6%84ide%EB%A5%BC%EC%9D%B4%EC%9A%A9%ED%95%9Chexo%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%9A%B4%EC%98%811%EB%B6%80/</loc>
+        <lastmod>2019-12-12T01:34:14.163Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://kindfamily.github.io/2019/12/10/vundler%EC%82%AC%EC%9A%A9%EB%B2%95/</loc>
+        <lastmod>2019-12-12T01:19:33.420Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -130,38 +154,6 @@
     <url>
         <loc>https://kindfamily.github.io/2019/11/17/2019-11-18/</loc>
         <lastmod>2019-12-08T08:09:32.726Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://kindfamily.github.io/2019/11/10/%EA%B5%AC%EB%A6%84ide%EB%A5%BC%EC%9D%B4%EC%9A%A9%ED%95%9Chexo%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%9A%B4%EC%98%811%EB%B6%80/</loc>
-        <lastmod>2019-12-04T14:45:44.857Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://kindfamily.github.io/2019/11/26/hexo-custom1/</loc>
-        <lastmod>2019-11-27T07:01:12.982Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://kindfamily.github.io/2019/11/17/vim/</loc>
-        <lastmod>2019-11-26T18:43:15.800Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://kindfamily.github.io/2019/11/10/%EB%9D%BC%EC%9D%B4%ED%8A%B8%EC%84%B8%EC%9D%BC/</loc>
-        <lastmod>2019-11-17T14:47:24.032Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

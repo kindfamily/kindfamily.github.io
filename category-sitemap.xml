@@ -8,29 +8,29 @@
     </url>
 
     <url>
-        <loc>https://kindfamily.github.io/categories/%25EC%25B1%2585/%25EC%25A7%2580%25EC%2598%25A5%25EC%2597%2590%25EC%2584%259C%25EC%2598%25A8git/</loc>
-        <lastmod>2019-12-11T06:11:32.058Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://kindfamily.github.io/categories/%25EC%25B1%2585/</loc>
-        <lastmod>2019-12-11T06:11:32.058Z</lastmod>
+        <lastmod>2019-12-12T01:36:56.781Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://kindfamily.github.io/categories/02-%25EC%2596%25B8%25EC%2596%25B4/markdown-%25EC%259E%2591%25EC%2584%25B1%25EC%25A4%2591/</loc>
-        <lastmod>2019-12-11T01:37:49.167Z</lastmod>
+        <loc>https://kindfamily.github.io/categories/%25EC%2596%25B8%25EC%2596%25B4/</loc>
+        <lastmod>2019-12-12T01:35:44.103Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://kindfamily.github.io/categories/02-%25EC%2596%25B8%25EC%2596%25B4/</loc>
-        <lastmod>2019-12-11T01:37:49.167Z</lastmod>
+        <loc>https://kindfamily.github.io/categories/AWS/</loc>
+        <lastmod>2019-12-12T01:35:06.580Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://kindfamily.github.io/categories/hexo/</loc>
+        <lastmod>2019-12-12T01:34:14.163Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -38,48 +38,6 @@
     <url>
         <loc>https://kindfamily.github.io/categories/TIL/</loc>
         <lastmod>2019-12-08T08:31:08.059Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://kindfamily.github.io/categories/01-hexo/groomide/</loc>
-        <lastmod>2019-12-04T14:45:44.857Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://kindfamily.github.io/categories/01-hexo/</loc>
-        <lastmod>2019-12-04T14:45:44.857Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://kindfamily.github.io/categories/01-hexo/custom1/</loc>
-        <lastmod>2019-11-27T07:01:12.982Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://kindfamily.github.io/categories/02-%25EC%2596%25B8%25EC%2596%25B4/vim/</loc>
-        <lastmod>2019-11-26T18:43:15.800Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://kindfamily.github.io/categories/03-AWS/lightsail-%25EC%259E%2591%25EC%2584%25B1%25EC%25A4%2591/</loc>
-        <lastmod>2019-11-17T14:47:24.032Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://kindfamily.github.io/categories/03-AWS/</loc>
-        <lastmod>2019-11-17T14:47:24.032Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
