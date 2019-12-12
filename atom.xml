@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kindfamily.github.io/"/>
-  <updated>2019-12-11T04:40:01.688Z</updated>
+  <updated>2019-12-12T01:04:44.841Z</updated>
   <id>https://kindfamily.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://kindfamily.github.io/2019/12/10/vundler%EC%82%AC%EC%9A%A9%EB%B2%95/"/>
     <id>https://kindfamily.github.io/2019/12/10/vundler%EC%82%AC%EC%9A%A9%EB%B2%95/</id>
     <published>2019-12-10T16:40:48.000Z</published>
-    <updated>2019-12-11T04:40:01.688Z</updated>
+    <updated>2019-12-12T01:04:44.841Z</updated>
     
     <content type="html"><![CDATA[<h3 id="vundler-사용법"><a href="#vundler-사용법" class="headerlink" title="vundler 사용법"></a>vundler 사용법</h3><hr><h6 id="vim-vunbler-폴더-생성-후-클론"><a href="#vim-vunbler-폴더-생성-후-클론" class="headerlink" title="~/.vim/vunbler 폴더 생성 후 클론"></a>~/.vim/vunbler 폴더 생성 후 클론</h6><p>클론주소</p><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://github.com/VundleVim/Vundle.vim.git</span><br></pre></td></tr></table></figure><br>###### ~/.vimrc 파일 생성 후 샘플 파일 입력 후 저장<p>샘플파일 <a href="https://github.com/VundleVim/Vundle.Vim#quick-start" target="_blank" rel="noopener">링크</a></p><br>###### vim으로 파일 열기> plugin설치:PluginInstall<br><h6 id="폴더이동및-파일관리-플러그인-nerdtree"><a href="#폴더이동및-파일관리-플러그인-nerdtree" class="headerlink" title="폴더이동및 파일관리 플러그인 ( nerdtree )"></a>폴더이동및 파일관리 플러그인 ( nerdtree )</h6><p><a href="https://vimawesome.com/plugin/nerdtree-red" target="_blank" rel="noopener">사용법 안내 블로그</a></p><a id="more"></a><ul><li>실행<ul><li><code>:NERDTree</code></li></ul></li><li>이동<ul><li><code>h/j/k/l</code></li></ul></li><li>선택<ul><li>enter</li></ul></li><li>검색<ul><li><code>/</code></li></ul></li><li>끝내기<ul><li><code>q</code></li></ul></li></ul>]]></content>
     
@@ -168,6 +168,8 @@
       <category term="TIL" scheme="https://kindfamily.github.io/categories/TIL/"/>
     
     
+      <category term="TIL" scheme="https://kindfamily.github.io/tags/TIL/"/>
+    
       <category term="파이썬웹프로그래밍" scheme="https://kindfamily.github.io/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9B%B9%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/"/>
     
       <category term="python" scheme="https://kindfamily.github.io/tags/python/"/>
@@ -177,8 +179,6 @@
       <category term="youtube" scheme="https://kindfamily.github.io/tags/youtube/"/>
     
       <category term="오픈소스" scheme="https://kindfamily.github.io/tags/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4/"/>
-    
-      <category term="TIL" scheme="https://kindfamily.github.io/tags/TIL/"/>
     
   </entry>
   
@@ -354,9 +354,9 @@
       <category term="TIL" scheme="https://kindfamily.github.io/categories/TIL/"/>
     
     
-      <category term="hexo" scheme="https://kindfamily.github.io/tags/hexo/"/>
-    
       <category term="TIL" scheme="https://kindfamily.github.io/tags/TIL/"/>
+    
+      <category term="hexo" scheme="https://kindfamily.github.io/tags/hexo/"/>
     
       <category term="터미널사용법" scheme="https://kindfamily.github.io/tags/%ED%84%B0%EB%AF%B8%EB%84%90%EC%82%AC%EC%9A%A9%EB%B2%95/"/>
     
@@ -456,6 +456,8 @@
       <category term="TIL" scheme="https://kindfamily.github.io/categories/TIL/"/>
     
     
+      <category term="TIL" scheme="https://kindfamily.github.io/tags/TIL/"/>
+    
       <category term="파이썬웹프로그래밍" scheme="https://kindfamily.github.io/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9B%B9%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/"/>
     
       <category term="python" scheme="https://kindfamily.github.io/tags/python/"/>
@@ -465,8 +467,6 @@
       <category term="youtube" scheme="https://kindfamily.github.io/tags/youtube/"/>
     
       <category term="오픈소스" scheme="https://kindfamily.github.io/tags/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4/"/>
-    
-      <category term="TIL" scheme="https://kindfamily.github.io/tags/TIL/"/>
     
   </entry>
   

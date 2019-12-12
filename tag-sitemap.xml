@@ -3,6 +3,20 @@
 
 
     <url>
+        <loc>https://kindfamily.github.io/tags/vundler/</loc>
+        <lastmod>2019-12-12T01:04:44.841Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://kindfamily.github.io/tags/vim/</loc>
+        <lastmod>2019-12-12T01:04:44.841Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://kindfamily.github.io/tags/%25EC%25B1%2585%25EB%25A6%25AC%25EB%25B7%25B0/</loc>
         <lastmod>2019-12-11T06:11:32.058Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -31,20 +45,6 @@
     </url>
 
     <url>
-        <loc>https://kindfamily.github.io/tags/vundler/</loc>
-        <lastmod>2019-12-11T04:40:01.688Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://kindfamily.github.io/tags/vim/</loc>
-        <lastmod>2019-12-11T04:40:01.688Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://kindfamily.github.io/tags/markdown/</loc>
         <lastmod>2019-12-11T01:37:49.167Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -61,13 +61,6 @@
     <url>
         <loc>https://kindfamily.github.io/tags/hexo/</loc>
         <lastmod>2019-12-08T08:26:27.937Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://kindfamily.github.io/tags/TIL/</loc>
-        <lastmod>2019-12-08T08:12:12.784Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -95,6 +88,13 @@
 
     <url>
         <loc>https://kindfamily.github.io/tags/%25ED%258C%258C%25EC%259D%25B4%25EC%258D%25AC%25EC%259B%25B9%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25B0%258D/</loc>
+        <lastmod>2019-12-08T08:12:12.784Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://kindfamily.github.io/tags/TIL/</loc>
         <lastmod>2019-12-08T08:12:12.784Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
