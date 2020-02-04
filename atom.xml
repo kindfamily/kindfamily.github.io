@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kindfamily.github.io/"/>
-  <updated>2019-12-12T01:19:33.420Z</updated>
+  <updated>2020-02-04T11:14:57.141Z</updated>
   <id>https://kindfamily.github.io/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>djangoshell</title>
+    <link href="https://kindfamily.github.io/2020/02/04/djangoshell/"/>
+    <id>https://kindfamily.github.io/2020/02/04/djangoshell/</id>
+    <published>2020-02-04T01:46:51.000Z</published>
+    <updated>2020-02-04T11:14:57.141Z</updated>
+    
+    <content type="html"><![CDATA[<p>장고에는 shell을 이용해서 model의 내용을 읽고 생성하고 수정하고 삭제할수가 있다. 즉 CRUD가 터미널 명령으로 확인이 가능한 것이다. 물론 admin으로도 확인이 가능하지만 가능하면 shell을 통해 명령어를 확인하고 코딩을 하게되면 좀더 효과적으로 학습이 가능하다. shell에 입력이 가능한 명령어들을 정리해 봤습니다.</p><h1 id="import"><a href="#import" class="headerlink" title="import"></a>import</h1><hr><p>** 필요한 모델과 기능들을 불러오는 부분</p><p>from django.contrib.auth.models import User <br>from django.conf import setting </p><p>from chat.models import *<br>from accounts.models import *</p><h1 id="CRUD"><a href="#CRUD" class="headerlink" title="CRUD"></a>CRUD</h1><hr><p>** objects 디폴트 메니저를 통해 crud를 구현할수 있다</p><h2 id="R"><a href="#R" class="headerlink" title="R"></a>R</h2><p>from django.db.models import Q<br>from post.models import Post # Post 모델 불러오기<br>from django.contrib.auth.models import User # User 모델 불러오기</p><p>user = request.user # 현재 접속한 user 확인 FBV( 함수형 view 일때 )<br>user = self.request.user # 현재 접속한 user 확인 FBV( 클래스형 view 일때 )</p><p>Post.objects.all()<br>Post.objects.count() # 숫자확인<br>Post.objects.all().order_by(‘-id’)[:10]<br>Post.objects.get(pk=1)<br>Post.objects.values() # 전체 필드 확인<br>Post.objects.filter(username=’kindfamily’, gender=’남성’)<br>Post.objects.filter(Q(username=’kindfamily’) | Q(gender=’남성’)) # or<br>Post.objects.filter(Q(username=’kindfamily’) &amp; Q(gender=’남성’)) # and<br>Post.objects.filter(username=’kindfamily’, gender=’남성’).exclude(location=’서울’) # 제외할 조건</p><a id="more"></a><h2 id="C"><a href="#C" class="headerlink" title="C"></a>C</h2><p>Post.objects.create(name=’kindtiger’)</p><h2 id="U"><a href="#U" class="headerlink" title="U"></a>U</h2><h3 id="1-row-하나씩-수정해야해서-느리다"><a href="#1-row-하나씩-수정해야해서-느리다" class="headerlink" title="1 - row 하나씩 수정해야해서 느리다"></a>1 - row 하나씩 수정해야해서 느리다</h3><p>post.Post.objects.get(id=1)<br>post.title = ‘django shell’<br>post.save</p><h3 id="2-일괄-수정해서-조금더-빠르다"><a href="#2-일괄-수정해서-조금더-빠르다" class="headerlink" title="2 - 일괄 수정해서 조금더 빠르다"></a>2 - 일괄 수정해서 조금더 빠르다</h3><p>post = Post.objects.all()<br>post.update(title=’python shell’)</p><h2 id="D"><a href="#D" class="headerlink" title="D"></a>D</h2><p>Post.objects.all().delete()<br>Post.objects.all().delete(pk=1)</p><h1 id="기타"><a href="#기타" class="headerlink" title="기타"></a>기타</h1><hr><p>출처: 초보몽키의 개발로그 <a href="https://wayhome25.github.io/django/2017/04/01/django-ep9-crud/" target="_blank" rel="noopener">링크</a> </p><h3 id="모델의-첫번째-내용-출력하고-싶을때"><a href="#모델의-첫번째-내용-출력하고-싶을때" class="headerlink" title="모델의 첫번째 내용 출력하고 싶을때"></a>모델의 첫번째 내용 출력하고 싶을때</h3><p>YourModel.objects.all().first()</p><h3 id="sql-내역-확인"><a href="#sql-내역-확인" class="headerlink" title="sql 내역 확인"></a>sql 내역 확인</h3><figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="hljs-keyword">from</span> django.db <span class="hljs-keyword">import</span> connection</span><br><span class="line"><span class="hljs-keyword">from</span> post.models <span class="hljs-keyword">import</span> Post</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">from</span> query <span class="hljs-keyword">in</span> connection queries:</span><br><span class="line">    print(query)</span><br></pre></td></tr></table></figure><h3 id="포스팅-1000개-한꺼번에-만들기"><a href="#포스팅-1000개-한꺼번에-만들기" class="headerlink" title="포스팅 1000개 한꺼번에 만들기"></a>포스팅 1000개 한꺼번에 만들기</h3><figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="hljs-keyword">import</span> random</span><br><span class="line"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">1000</span>):</span><br><span class="line">    status = random.choice([<span class="hljs-string">'d'</span>, <span class="hljs-string">'p'</span>, <span class="hljs-string">'w'</span>])</span><br><span class="line">    Post.objects.create(author=<span class="hljs-string">"kindfamily"</span>, title=<span class="hljs-string">"제목 #&#123;&#125;"</span>.format(i), content=<span class="hljs-string">"테스트 내용 #&#123;&#125;"</span>.format(i), status=status)</span><br></pre></td></tr></table></figure><h3 id="filter를-통한-검색-구현"><a href="#filter를-통한-검색-구현" class="headerlink" title="filter를 통한 검색 구현"></a>filter를 통한 검색 구현</h3><figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">post_list</span><span class="hljs-params">(request)</span>:</span></span><br><span class="line">    qs = Post.objects.all()</span><br><span class="line">    q = request.GET.get(<span class="hljs-string">'q'</span>, <span class="hljs-string">''</span>)</span><br><span class="line">    <span class="hljs-keyword">if</span> q:</span><br><span class="line">        qs = qs.filter(title_icontains=q)</span><br><span class="line">    <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">'blog/post_list.html'</span>,&#123;</span><br><span class="line">        <span class="hljs-string">'post_list'</span>: qs,</span><br><span class="line">    &#125;)</span><br></pre></td></tr></table></figure><figure class="highlight html hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">""</span> <span class="hljs-attr">method</span>=<span class="hljs-string">"get"</span>&gt;</span></span><br><span class="line">    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">'text'</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"q"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"검색"</span>&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;장고에는 shell을 이용해서 model의 내용을 읽고 생성하고 수정하고 삭제할수가 있다. 즉 CRUD가 터미널 명령으로 확인이 가능한 것이다. 물론 admin으로도 확인이 가능하지만 가능하면 shell을 통해 명령어를 확인하고 코딩을 하게되면 좀더 효과적으로 학습이 가능하다. shell에 입력이 가능한 명령어들을 정리해 봤습니다.&lt;/p&gt;
+&lt;h1 id=&quot;import&quot;&gt;&lt;a href=&quot;#import&quot; class=&quot;headerlink&quot; title=&quot;import&quot;&gt;&lt;/a&gt;import&lt;/h1&gt;&lt;hr&gt;
+&lt;p&gt;** 필요한 모델과 기능들을 불러오는 부분&lt;/p&gt;
+&lt;p&gt;from django.contrib.auth.models import User &lt;br&gt;from django.conf import setting &lt;/p&gt;
+&lt;p&gt;from chat.models import *&lt;br&gt;from accounts.models import *&lt;/p&gt;
+&lt;h1 id=&quot;CRUD&quot;&gt;&lt;a href=&quot;#CRUD&quot; class=&quot;headerlink&quot; title=&quot;CRUD&quot;&gt;&lt;/a&gt;CRUD&lt;/h1&gt;&lt;hr&gt;
+&lt;p&gt;** objects 디폴트 메니저를 통해 crud를 구현할수 있다&lt;/p&gt;
+&lt;h2 id=&quot;R&quot;&gt;&lt;a href=&quot;#R&quot; class=&quot;headerlink&quot; title=&quot;R&quot;&gt;&lt;/a&gt;R&lt;/h2&gt;&lt;p&gt;from django.db.models import Q&lt;br&gt;from post.models import Post # Post 모델 불러오기&lt;br&gt;from django.contrib.auth.models import User # User 모델 불러오기&lt;/p&gt;
+&lt;p&gt;user = request.user # 현재 접속한 user 확인 FBV( 함수형 view 일때 )&lt;br&gt;user = self.request.user # 현재 접속한 user 확인 FBV( 클래스형 view 일때 )&lt;/p&gt;
+&lt;p&gt;Post.objects.all()&lt;br&gt;Post.objects.count() # 숫자확인&lt;br&gt;Post.objects.all().order_by(‘-id’)[:10]&lt;br&gt;Post.objects.get(pk=1)&lt;br&gt;Post.objects.values() # 전체 필드 확인&lt;br&gt;Post.objects.filter(username=’kindfamily’, gender=’남성’)&lt;br&gt;Post.objects.filter(Q(username=’kindfamily’) | Q(gender=’남성’)) # or&lt;br&gt;Post.objects.filter(Q(username=’kindfamily’) &amp;amp; Q(gender=’남성’)) # and&lt;br&gt;Post.objects.filter(username=’kindfamily’, gender=’남성’).exclude(location=’서울’) # 제외할 조건&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="django" scheme="https://kindfamily.github.io/tags/django/"/>
+    
+      <category term="shell" scheme="https://kindfamily.github.io/tags/shell/"/>
+    
+  </entry>
   
   <entry>
     <title>vundler사용법</title>
@@ -467,9 +499,9 @@
     
       <category term="TIL" scheme="https://kindfamily.github.io/tags/TIL/"/>
     
-      <category term="github" scheme="https://kindfamily.github.io/tags/github/"/>
-    
       <category term="markdown" scheme="https://kindfamily.github.io/tags/markdown/"/>
+    
+      <category term="github" scheme="https://kindfamily.github.io/tags/github/"/>
     
   </entry>
   

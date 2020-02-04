@@ -133,6 +133,64 @@
 <div class="card">
     
     <div class="card-image">
+        <a href="/2020/02/04/djangoshell/" class="image is-7by1">
+            <img class="thumbnail" src="/image/thumbnail/django.png" alt="djangoshell">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-02-04T01:46:51.000Z">2020-02-04</time>
+                
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2020/02/04/djangoshell/">djangoshell</a>
+            
+        </h1>
+        <div class="content">
+            <p>장고에는 shell을 이용해서 model의 내용을 읽고 생성하고 수정하고 삭제할수가 있다. 즉 CRUD가 터미널 명령으로 확인이 가능한 것이다. 물론 admin으로도 확인이 가능하지만 가능하면 shell을 통해 명령어를 확인하고 코딩을 하게되면 좀더 효과적으로 학습이 가능하다. shell에 입력이 가능한 명령어들을 정리해 봤습니다.</p>
+<h1 id="import"><a href="#import" class="headerlink" title="import"></a>import</h1><hr>
+<p>** 필요한 모델과 기능들을 불러오는 부분</p>
+<p>from django.contrib.auth.models import User <br>from django.conf import setting </p>
+<p>from chat.models import *<br>from accounts.models import *</p>
+<h1 id="CRUD"><a href="#CRUD" class="headerlink" title="CRUD"></a>CRUD</h1><hr>
+<p>** objects 디폴트 메니저를 통해 crud를 구현할수 있다</p>
+<h2 id="R"><a href="#R" class="headerlink" title="R"></a>R</h2><p>from django.db.models import Q<br>from post.models import Post # Post 모델 불러오기<br>from django.contrib.auth.models import User # User 모델 불러오기</p>
+<p>user = request.user # 현재 접속한 user 확인 FBV( 함수형 view 일때 )<br>user = self.request.user # 현재 접속한 user 확인 FBV( 클래스형 view 일때 )</p>
+<p>Post.objects.all()<br>Post.objects.count() # 숫자확인<br>Post.objects.all().order_by(‘-id’)[:10]<br>Post.objects.get(pk=1)<br>Post.objects.values() # 전체 필드 확인<br>Post.objects.filter(username=’kindfamily’, gender=’남성’)<br>Post.objects.filter(Q(username=’kindfamily’) | Q(gender=’남성’)) # or<br>Post.objects.filter(Q(username=’kindfamily’) &amp; Q(gender=’남성’)) # and<br>Post.objects.filter(username=’kindfamily’, gender=’남성’).exclude(location=’서울’) # 제외할 조건</p>
+        </div>
+        
+        
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/2020/02/04/djangoshell/#more">자세히 보기</a>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-image">
         <a href="/2019/12/10/vundler%EC%82%AC%EC%9A%A9%EB%B2%95/" class="image is-7by1">
             <img class="thumbnail" src="/image/post/vundler.jpg" alt="vundler사용법">
         </a>
@@ -661,76 +719,6 @@
 
 
 
-    
-<div class="card">
-    
-    <div class="card-image">
-        <a href="/2019/11/21/191122/" class="image is-7by1">
-            <img class="thumbnail" src="/image/thumbnail/TIL.jpeg" alt="191122">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-11-21T15:19:32.000Z">2019-11-22</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/TIL/">TIL</a>
-                </div>
-                
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/11/21/191122/">191122</a>
-            
-        </h1>
-        <div class="content">
-            <p>터미널 학습 자료 </p>
-<ul>
-<li>bash zsh 적용과 맥 단축키안내 (<a href="https://futurecreator.github.io/2018/05/30/mac-os-better-terminal-iterm2-zsh-oh-my-zsh/" target="_blank" rel="noopener">링크</a>)</li>
-<li>맥 터미널 세팅 종합 (<a href="https://johngrib.github.io/wiki/my-mac-os-terminal/?fbclid=IwAR2QRRoeZv6L2sMbwmecLI5xJRObKmFHwxPmQ8OqR06w31Q8LcIpRijIfVs" target="_blank" rel="noopener">링크</a>)</li>
-</ul>
-<p>github action + github package를 이용해서 기본 장고 프로젝트를 로컬에서 자동으로 설치가 되도록 세팅<br>( 요건 쉽지 않을듯 ..)</p>
-<ul>
-<li>선수지식 ( docker: <a href="https://subicura.com/2017/01/19/docker-guide-for-beginners-2.html" target="_blank" rel="noopener">설치실행</a> | <a href="http://devstory.ibksplatform.com/2018/06/docker.html" target="_blank" rel="noopener">사용법</a> )</li>
-</ul>
-<p>오늘생각한 중요한생각</p>
-<p>강의를 제작하면 자연스럽게 예제파일이 생긴다</p>
-<p>파일을 학습자에게 전달할때 세가지 문제가 생긴다 </p>
-<ol>
-<li>깃헙이 어렵다</li>
-<li>장고가 어렵다</li>
-<li>개인컴퓨터의 환경이 각기 다르다</li>
-</ol>
-<p>더불어서 개개인의 컴퓨터 세팅이 다른관계로 아예 예제파일을 열어볼수 조차 없는 사람이 부지기수이다</p>
-<p>CI/CD라는 것과 github action, packages를 이용하면</p>
-<p>어떤 환경 ( win, linux, mac )에서든 다운만 받으면 </p>
-<p>pip설치와 테스트 서버까지 실행이 되도록 할수 있지 않을까? </p>
-<p>그런게 가능했은면 이미 이고잉님이 강의로 만들어 주셨을려나? ㅠ ㅠ </p>
-<p>이번에 제주도 가면 범재님한테 물어봐야겠다 ㅠ ㅠ</p>
-<h6 id="hexo-커스텀"><a href="#hexo-커스텀" class="headerlink" title="hexo 커스텀"></a>hexo 커스텀</h6><hr>
-<p>폰트변경 ( <a href>방법</a> )</p>
-
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
@@ -794,7 +782,7 @@
                         포스트
                     </p>
                     <p class="title has-text-weight-normal">
-                        19
+                        20
                     </p>
                 </div>
             </div>
@@ -814,7 +802,7 @@
                         태그
                     </p>
                     <p class="title has-text-weight-normal">
-                        25
+                        26
                     </p>
                 </div>
             </div>
@@ -986,7 +974,7 @@
                 
                 </a>
                 <p class="is-size-7">
-                &copy; 2019 Kind bear&nbsp;
+                &copy; 2020 Kind bear&nbsp;
                 Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a
                         href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
                 
