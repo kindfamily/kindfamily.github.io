@@ -133,6 +133,65 @@
 <div class="card">
     
     <div class="card-image">
+        <a href="/2020/02/05/%EB%B9%84%EA%B5%AC%EC%A1%B0%ED%99%94%ED%95%A0%EB%8B%B9-js/" class="image is-7by1">
+            <img class="thumbnail" src="/image/thumbnail/destructuringassignment.001.jpeg" alt="비구조화할당-js">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-02-05T23:56:36.000Z">2020-02-06</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/JS/">JS</a>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2020/02/05/%EB%B9%84%EA%B5%AC%EC%A1%B0%ED%99%94%ED%95%A0%EB%8B%B9-js/">비구조화할당-js</a>
+            
+        </h1>
+        <div class="content">
+            <p>javascript는 대표적인 객체지향 프로그래밍 언어 중에 하나입니다. 객체를 이용하는 방법이 es6에 오면서 좀더 간결해 졌는데요. 비구조화할당이라는 부분이 있습니다. 말이 상당이 어려워 보이는데요. 사실 프로그래밍의 발전에 가장 중요한 키워드는 바로</p>
+<p><strong>‘정리’</strong></p>
+<p>라는 생각을 하게됩니다. 객체라는 것도 사실 정보를 좀더 잘 관리하기 위해서 고안된 발명품이지 않나 싶습니다. 비구조화할당은 이 객체를 조금더 정리하기 위해서 만들어진 발명품입니다.( 요건 제생각 ) 여튼 일반적으로 사용했던 객체 사용법과 어떻게 달라졌는지 1~3번의 과정을 통해서 비교해 보세요.</p>
+<h2 id="1"><a href="#1" class="headerlink" title="1"></a>1</h2><p>*<em>일반적으로 사용하는 객체 사용방법<br>*</em>nomal_man, super_man 두개의 객체를 만들어서 객체의 value값을 콘솔에 뿌려보도록 할게요<br>**``을 이용하면 문자를 쉽게 조합할수 있다</p>
+<figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="hljs-keyword">const</span> nomal_man = &#123;</span><br><span class="line">    name: <span class="hljs-string">'kindbear'</span>,</span><br><span class="line">    year: <span class="hljs-string">'1984'</span>,</span><br><span class="line">    color: <span class="hljs-string">'yellow'</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">const</span> super_man = &#123;</span><br><span class="line">    name: <span class="hljs-string">'superman'</span>,</span><br><span class="line">    year: <span class="hljs-string">'1600'</span>,</span><br><span class="line">    color: <span class="hljs-string">'red'</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">print</span>(<span class="hljs-params">man</span>) </span>&#123;</span><br><span class="line">    <span class="hljs-keyword">const</span> context = <span class="hljs-string">`저는 <span class="hljs-subst">$&#123;man.name&#125;</span>입니다. <span class="hljs-subst">$&#123;man.year&#125;</span>에 태어났고 <span class="hljs-subst">$&#123;man.color&#125;</span>(?)색깔 옷을 좋아합니다`</span>;</span><br><span class="line">    <span class="hljs-built_in">console</span>.log(context);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">print(nomal_man);</span><br><span class="line">print(super_man);</span><br></pre></td></tr></table></figure>
+
+<h2 id="2"><a href="#2" class="headerlink" title="2"></a>2</h2><p>**사용할 객체를 변수에 담아서 코드를 정리</p>
+<figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="hljs-keyword">const</span> nomal_man = &#123;</span><br><span class="line">    name: <span class="hljs-string">'kindbear'</span>,</span><br><span class="line">    year: <span class="hljs-string">'1984'</span>,</span><br><span class="line">    color: <span class="hljs-string">'yellow'</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">const</span> super_man = &#123;</span><br><span class="line">    name: <span class="hljs-string">'superman'</span>,</span><br><span class="line">    year: <span class="hljs-string">'1600'</span>,</span><br><span class="line">    color: <span class="hljs-string">'red'</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">print</span>(<span class="hljs-params">man</span>) </span>&#123;</span><br><span class="line">    <span class="hljs-keyword">const</span> man = &#123; name, year, color &#125;</span><br><span class="line">    <span class="hljs-keyword">const</span> context = <span class="hljs-string">`저는 <span class="hljs-subst">$&#123;name&#125;</span>입니다. <span class="hljs-subst">$&#123;year&#125;</span>에 태어났고 <span class="hljs-subst">$&#123;color&#125;</span>(?)색깔 옷을 좋아합니다`</span>;</span><br><span class="line">    <span class="hljs-built_in">console</span>.log(context);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">print(nomal_man);</span><br><span class="line">print(super_man);</span><br></pre></td></tr></table></figure>
+
+<h2 id="3"><a href="#3" class="headerlink" title="3"></a>3</h2><p>**사용할 객체를 파라미터에 담아서 코드를 또한번 정리 ( 맞아요 .. 그 생소한 코드들이 이렇게 줄인거였습니다 -_- ) </p>
+<figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="hljs-keyword">const</span> nomal_man = &#123;</span><br><span class="line">  name: <span class="hljs-string">"kindbear"</span>,</span><br><span class="line">  year: <span class="hljs-string">"1984"</span>,</span><br><span class="line">  color: <span class="hljs-string">"yellow"</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">const</span> super_man = &#123;</span><br><span class="line">  name: <span class="hljs-string">"superman"</span>,</span><br><span class="line">  year: <span class="hljs-string">"1600"</span>,</span><br><span class="line">  color: <span class="hljs-string">"red"</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">print</span>(<span class="hljs-params">man</span>) </span>&#123;</span><br><span class="line">  <span class="hljs-keyword">const</span> &#123; name, year, color &#125; = man;</span><br><span class="line">  <span class="hljs-keyword">const</span> context = <span class="hljs-string">`저는 <span class="hljs-subst">$&#123;name&#125;</span>입니다. <span class="hljs-subst">$&#123;year&#125;</span>에 태어났고 <span class="hljs-subst">$&#123;color&#125;</span>(?)색깔 옷을 좋아합니다`</span>;</span><br><span class="line">  <span class="hljs-built_in">console</span>.log(context);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">print(nomal_man);</span><br><span class="line">print(super_man);</span><br></pre></td></tr></table></figure>
+
+<p>이게 과정을 모르고 변화된 최신 문법들을 보면 이게 뭔가 .. 하는 생각이 들더라구요 실제로 저도 그럤구요.<br>이런걸 점점 없애는 과정도 코딩에 즐거움 중에 하나인것 같습니다.<br>:)</p>
+<p>오늘도 즐거운 코딩하세요~ ㅎ<br><img src="/image/about/kindfamily_charactor.png" alt="kindfamily"></p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-image">
         <a href="/2020/02/04/djangoshell/" class="image is-7by1">
             <img class="thumbnail" src="/image/thumbnail/django.png" alt="djangoshell">
         </a>
@@ -648,77 +707,6 @@
 
 
 
-    
-<div class="card">
-    
-    <div class="card-image">
-        <a href="/2019/11/23/191123/" class="image is-7by1">
-            <img class="thumbnail" src="/image/thumbnail/TIL.jpeg" alt="191123">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-11-23T04:40:09.000Z">2019-11-23</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/TIL/">TIL</a>
-                </div>
-                
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/11/23/191123/">191123</a>
-            
-        </h1>
-        <div class="content">
-            <h1 id="github-action-amp-github-packages-질문"><a href="#github-action-amp-github-packages-질문" class="headerlink" title="github action &amp; github packages 질문"></a>github action &amp; github packages 질문</h1><p>** 질문올린곳 ** ( oos개발자포럼,생활코딩 )</p>
-<ol>
-<li>docerr라던가 lightsail 같은 독립된 클라우드 환경에서 배포를 할때는 action에 워크플로워를 잡아서 배포를 하면 되는 걸까요?</li>
-<li>아예 docker도 설치가 안되어 있는 EC2 같은 환경에서 배포를 진행할때는 packages를 이용해서 action+packages로 배포를 하면 되는걸까요?</li>
-<li>그리고 이 일련의 동작들은 clone을 받는 순간에 자동으로 실행이 되는걸까요?</li>
-</ol>
-<p>** 답변 **</p>
-<p>깃헙 액션과 패키지는 코드가 깃헙에 올라갈 때</p>
-<p><em>자동으로 뭔가가 실행되는 (action) 겁니다. 그 “뭔가”는 어떤 액션을 지정하는가에 따라 달라집니다.</em></p>
-<p>_액션을 실행할 때 필요한 라이브러리 같은 것들이 있을텐데, 공개된 것을 사용할 수도 있고, 우리 팀 내부적으로만 자체적으로 만들어 놓은 것을 사용할 수도 있어요. 우리 팀 자체적으로 만들어 놓은 것만 쓰고 싶다면 그 때 패키지를 쓰면 됩니다. _</p>
-<p><em>이 두 컨셉은 깃헙 액션 = 애저 파이프라인, 깃헙 패키지 = 애저 아티팩트 정도로 대응이 가능하고 사용법도 비슷해서, 그쪽 문서를 보셔도 됩니다.</em></p>
-<p>** 결론 **</p>
-<p>action을 이용해서 장고 디폴트화면을 lightsail에서 엑션( clone을 했을때? )을 취했을때 환경설정( python, virtualenv, pip install -r requirement, python manage.py runserver )이 자동으로 될수 있도록 설정해보자</p>
-<p>그러고 나면 자연스럽게 packages의 개념도 익혀질것으로 보임</p>
-<p>** 유튜브 &gt; 인프런 **</p>
-<p>hexo 블로그 만들기 몇가지 내용 추가해서 강의 제작해서 올려보기</p>
-<ul>
-<li>vim에디터 레벨1 &gt; 2 &gt; 3 버전으로 나눠서 명령어 익히는 영상만들기</li>
-<li>커스텀 하는 영상 2~3개로 나눠서 만들기</li>
-</ul>
-<p>** 인스타그램영상 **</p>
-<ul>
-<li>소개영상 ( 작동영상 + 오픈소스 + 블로그 내용 추가해서 다시찍기 )</li>
-<li>검색창으로 태그 검색하는 코드 추가촬영</li>
-</ul>
-<p>** 깃엑션 **<br>아무내용없는 저장소 깃엑션으로 클론받아보기</p>
-
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
@@ -734,6 +722,8 @@
             <li><a class="pagination-link is-current" href="/">1</a></li>
             
             <li><a class="pagination-link has-text-black-ter" href="/page/2/">2</a></li>
+            
+            <li><a class="pagination-link has-text-black-ter" href="/page/3/">3</a></li>
             
         </ul>
     </nav>
@@ -782,7 +772,7 @@
                         포스트
                     </p>
                     <p class="title has-text-weight-normal">
-                        20
+                        21
                     </p>
                 </div>
             </div>
@@ -792,7 +782,7 @@
                         카테고리
                     </p>
                     <p class="title has-text-weight-normal">
-                        5
+                        6
                     </p>
                 </div>
             </div>
@@ -802,7 +792,7 @@
                         태그
                     </p>
                     <p class="title has-text-weight-normal">
-                        26
+                        27
                     </p>
                 </div>
             </div>
@@ -911,6 +901,14 @@
         <a class="level is-marginless" href="/categories/AWS/">
             <span class="level-start">
                 <span class="level-item">AWS</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/JS/">
+            <span class="level-start">
+                <span class="level-item">JS</span>
             </span>
             <span class="level-end">
                 <span class="level-item tag">1</span>

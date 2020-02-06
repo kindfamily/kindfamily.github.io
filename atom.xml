@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kindfamily.github.io/"/>
-  <updated>2020-02-04T11:14:57.141Z</updated>
+  <updated>2020-02-06T09:41:46.630Z</updated>
   <id>https://kindfamily.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>비구조화할당-js</title>
+    <link href="https://kindfamily.github.io/2020/02/05/%EB%B9%84%EA%B5%AC%EC%A1%B0%ED%99%94%ED%95%A0%EB%8B%B9-js/"/>
+    <id>https://kindfamily.github.io/2020/02/05/%EB%B9%84%EA%B5%AC%EC%A1%B0%ED%99%94%ED%95%A0%EB%8B%B9-js/</id>
+    <published>2020-02-05T23:56:36.000Z</published>
+    <updated>2020-02-06T09:41:46.630Z</updated>
+    
+    <content type="html"><![CDATA[<p>javascript는 대표적인 객체지향 프로그래밍 언어 중에 하나입니다. 객체를 이용하는 방법이 es6에 오면서 좀더 간결해 졌는데요. 비구조화할당이라는 부분이 있습니다. 말이 상당이 어려워 보이는데요. 사실 프로그래밍의 발전에 가장 중요한 키워드는 바로</p><p><strong>‘정리’</strong></p><p>라는 생각을 하게됩니다. 객체라는 것도 사실 정보를 좀더 잘 관리하기 위해서 고안된 발명품이지 않나 싶습니다. 비구조화할당은 이 객체를 조금더 정리하기 위해서 만들어진 발명품입니다.( 요건 제생각 ) 여튼 일반적으로 사용했던 객체 사용법과 어떻게 달라졌는지 1~3번의 과정을 통해서 비교해 보세요.</p><h2 id="1"><a href="#1" class="headerlink" title="1"></a>1</h2><p>*<em>일반적으로 사용하는 객체 사용방법<br>*</em>nomal_man, super_man 두개의 객체를 만들어서 객체의 value값을 콘솔에 뿌려보도록 할게요<br>**``을 이용하면 문자를 쉽게 조합할수 있다</p><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="hljs-keyword">const</span> nomal_man = &#123;</span><br><span class="line">    name: <span class="hljs-string">'kindbear'</span>,</span><br><span class="line">    year: <span class="hljs-string">'1984'</span>,</span><br><span class="line">    color: <span class="hljs-string">'yellow'</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">const</span> super_man = &#123;</span><br><span class="line">    name: <span class="hljs-string">'superman'</span>,</span><br><span class="line">    year: <span class="hljs-string">'1600'</span>,</span><br><span class="line">    color: <span class="hljs-string">'red'</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">print</span>(<span class="hljs-params">man</span>) </span>&#123;</span><br><span class="line">    <span class="hljs-keyword">const</span> context = <span class="hljs-string">`저는 <span class="hljs-subst">$&#123;man.name&#125;</span>입니다. <span class="hljs-subst">$&#123;man.year&#125;</span>에 태어났고 <span class="hljs-subst">$&#123;man.color&#125;</span>(?)색깔 옷을 좋아합니다`</span>;</span><br><span class="line">    <span class="hljs-built_in">console</span>.log(context);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">print(nomal_man);</span><br><span class="line">print(super_man);</span><br></pre></td></tr></table></figure><h2 id="2"><a href="#2" class="headerlink" title="2"></a>2</h2><p>**사용할 객체를 변수에 담아서 코드를 정리</p><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="hljs-keyword">const</span> nomal_man = &#123;</span><br><span class="line">    name: <span class="hljs-string">'kindbear'</span>,</span><br><span class="line">    year: <span class="hljs-string">'1984'</span>,</span><br><span class="line">    color: <span class="hljs-string">'yellow'</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">const</span> super_man = &#123;</span><br><span class="line">    name: <span class="hljs-string">'superman'</span>,</span><br><span class="line">    year: <span class="hljs-string">'1600'</span>,</span><br><span class="line">    color: <span class="hljs-string">'red'</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">print</span>(<span class="hljs-params">man</span>) </span>&#123;</span><br><span class="line">    <span class="hljs-keyword">const</span> man = &#123; name, year, color &#125;</span><br><span class="line">    <span class="hljs-keyword">const</span> context = <span class="hljs-string">`저는 <span class="hljs-subst">$&#123;name&#125;</span>입니다. <span class="hljs-subst">$&#123;year&#125;</span>에 태어났고 <span class="hljs-subst">$&#123;color&#125;</span>(?)색깔 옷을 좋아합니다`</span>;</span><br><span class="line">    <span class="hljs-built_in">console</span>.log(context);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">print(nomal_man);</span><br><span class="line">print(super_man);</span><br></pre></td></tr></table></figure><h2 id="3"><a href="#3" class="headerlink" title="3"></a>3</h2><p>**사용할 객체를 파라미터에 담아서 코드를 또한번 정리 ( 맞아요 .. 그 생소한 코드들이 이렇게 줄인거였습니다 -_- ) </p><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="hljs-keyword">const</span> nomal_man = &#123;</span><br><span class="line">  name: <span class="hljs-string">"kindbear"</span>,</span><br><span class="line">  year: <span class="hljs-string">"1984"</span>,</span><br><span class="line">  color: <span class="hljs-string">"yellow"</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">const</span> super_man = &#123;</span><br><span class="line">  name: <span class="hljs-string">"superman"</span>,</span><br><span class="line">  year: <span class="hljs-string">"1600"</span>,</span><br><span class="line">  color: <span class="hljs-string">"red"</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">print</span>(<span class="hljs-params">man</span>) </span>&#123;</span><br><span class="line">  <span class="hljs-keyword">const</span> &#123; name, year, color &#125; = man;</span><br><span class="line">  <span class="hljs-keyword">const</span> context = <span class="hljs-string">`저는 <span class="hljs-subst">$&#123;name&#125;</span>입니다. <span class="hljs-subst">$&#123;year&#125;</span>에 태어났고 <span class="hljs-subst">$&#123;color&#125;</span>(?)색깔 옷을 좋아합니다`</span>;</span><br><span class="line">  <span class="hljs-built_in">console</span>.log(context);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">print(nomal_man);</span><br><span class="line">print(super_man);</span><br></pre></td></tr></table></figure><p>이게 과정을 모르고 변화된 최신 문법들을 보면 이게 뭔가 .. 하는 생각이 들더라구요 실제로 저도 그럤구요.<br>이런걸 점점 없애는 과정도 코딩에 즐거움 중에 하나인것 같습니다.<br>:)</p><p>오늘도 즐거운 코딩하세요~ ㅎ<br><img src="/image/about/kindfamily_charactor.png" alt="kindfamily"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;javascript는 대표적인 객체지향 프로그래밍 언어 중에 하나입니다. 객체를 이용하는 방법이 es6에 오면서 좀더 간결해 졌는데요. 비구조화할당이라는 부분이 있습니다. 말이 상당이 어려워 보이는데요. 사실 프로그래밍의 발전에 가장 중요한 키워
+      
+    
+    </summary>
+    
+    
+      <category term="JS" scheme="https://kindfamily.github.io/categories/JS/"/>
+    
+    
+      <category term="js" scheme="https://kindfamily.github.io/tags/js/"/>
+    
+  </entry>
   
   <entry>
     <title>djangoshell</title>
@@ -196,17 +222,17 @@
       <category term="TIL" scheme="https://kindfamily.github.io/categories/TIL/"/>
     
     
-      <category term="TIL" scheme="https://kindfamily.github.io/tags/TIL/"/>
-    
-      <category term="hexo" scheme="https://kindfamily.github.io/tags/hexo/"/>
-    
       <category term="파이썬웹프로그래밍" scheme="https://kindfamily.github.io/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9B%B9%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/"/>
     
       <category term="python" scheme="https://kindfamily.github.io/tags/python/"/>
     
+      <category term="hexo" scheme="https://kindfamily.github.io/tags/hexo/"/>
+    
       <category term="youtube" scheme="https://kindfamily.github.io/tags/youtube/"/>
     
       <category term="오픈소스" scheme="https://kindfamily.github.io/tags/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4/"/>
+    
+      <category term="TIL" scheme="https://kindfamily.github.io/tags/TIL/"/>
     
   </entry>
   
@@ -351,6 +377,8 @@
       <category term="TIL" scheme="https://kindfamily.github.io/categories/TIL/"/>
     
     
+      <category term="hexo" scheme="https://kindfamily.github.io/tags/hexo/"/>
+    
       <category term="TIL" scheme="https://kindfamily.github.io/tags/TIL/"/>
     
       <category term="터미널사용법" scheme="https://kindfamily.github.io/tags/%ED%84%B0%EB%AF%B8%EB%84%90%EC%82%AC%EC%9A%A9%EB%B2%95/"/>
@@ -360,8 +388,6 @@
       <category term="githubaction" scheme="https://kindfamily.github.io/tags/githubaction/"/>
     
       <category term="githubpackage" scheme="https://kindfamily.github.io/tags/githubpackage/"/>
-    
-      <category term="hexo" scheme="https://kindfamily.github.io/tags/hexo/"/>
     
   </entry>
   
@@ -453,17 +479,17 @@
       <category term="TIL" scheme="https://kindfamily.github.io/categories/TIL/"/>
     
     
-      <category term="TIL" scheme="https://kindfamily.github.io/tags/TIL/"/>
-    
-      <category term="hexo" scheme="https://kindfamily.github.io/tags/hexo/"/>
-    
       <category term="파이썬웹프로그래밍" scheme="https://kindfamily.github.io/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9B%B9%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/"/>
     
       <category term="python" scheme="https://kindfamily.github.io/tags/python/"/>
     
+      <category term="hexo" scheme="https://kindfamily.github.io/tags/hexo/"/>
+    
       <category term="youtube" scheme="https://kindfamily.github.io/tags/youtube/"/>
     
       <category term="오픈소스" scheme="https://kindfamily.github.io/tags/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4/"/>
+    
+      <category term="TIL" scheme="https://kindfamily.github.io/tags/TIL/"/>
     
   </entry>
   
@@ -620,34 +646,6 @@
     
     
       <category term="markdown" scheme="https://kindfamily.github.io/tags/markdown/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>라이트세일</title>
-    <link href="https://kindfamily.github.io/2019/11/10/%EB%9D%BC%EC%9D%B4%ED%8A%B8%EC%84%B8%EC%9D%BC/"/>
-    <id>https://kindfamily.github.io/2019/11/10/%EB%9D%BC%EC%9D%B4%ED%8A%B8%EC%84%B8%EC%9D%BC/</id>
-    <published>2019-11-10T07:19:37.000Z</published>
-    <updated>2019-12-12T01:35:06.580Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://aws.amazon.com/ko/s/lp/epid1014-b/?trk=ps_a131L000005Of2gQAC&trkCampaign=ACQ_Amazon_Lightsail&sc_channel=ps&sc_campaign=acquisition_KR&sc_publisher=google&sc_category=lightsail&sc_country=KR&sc_geo=APAC&sc_outcome=acquisition&sc_medium=ACQ-P|PS-GO|Brand|Desktop|SU|Compute|Lightsail|KR|EN|Text|Lightsail&sc_content=lightsail_e&s_kwcid=AL!4422!3!301818270442!e!!g!!lightsail&ef_id=CjwKCAiAh5_uBRA5EiwASW3IavBPIU77YtNdzflM3qtpamnB1rLejenCmyjNptmvEG5nE6CNFNyjuxoC81oQAvD_BwE:G:s" target="_blank" rel="noopener">라이트세일</a><br>은 아마존의 정액제 클라우드 서비스입니다</p><p>음… 아마존에는 돈내고 쓰는 정말 많은 종류의 클라우드 서버가 있는데요<br>그중에 하나입니다 </p><p>제일 유명한 서비스는 ec2입니다</p><p><img src="https://user-images.githubusercontent.com/12974446/68547351-e1fc5b80-0423-11ea-89f4-383718c55097.jpg" alt="amazone-ec2-57bfe1345f9b5855e5a54003"></p><p>온라인 공간에 가상의 컴퓨터를 만드는 건데요 원하는 만큼의 스토리지와 램, cpu를 만들고 원하는 때에 증설이 가능합니다</p><p>성능을 높일수록 비용이 올라가는것 빼고는 정말 꿈의 써비스 입니다</p><p>한국 리전에 생겨서 속도도 빠릅니다</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;https://aws.amazon.com/ko/s/lp/epid1014-b/?trk=ps_a131L000005Of2gQAC&amp;trkCampaign=ACQ_Amazon_Lightsail&amp;sc_channel=ps&amp;sc_campaign=
-      
-    
-    </summary>
-    
-    
-      <category term="AWS" scheme="https://kindfamily.github.io/categories/AWS/"/>
-    
-    
-      <category term="aws" scheme="https://kindfamily.github.io/tags/aws/"/>
-    
-      <category term="장고배포" scheme="https://kindfamily.github.io/tags/%EC%9E%A5%EA%B3%A0%EB%B0%B0%ED%8F%AC/"/>
     
   </entry>
   

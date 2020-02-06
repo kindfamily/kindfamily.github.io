@@ -133,6 +133,77 @@
 <div class="card">
     
     <div class="card-image">
+        <a href="/2019/11/23/191123/" class="image is-7by1">
+            <img class="thumbnail" src="/image/thumbnail/TIL.jpeg" alt="191123">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-11-23T04:40:09.000Z">2019-11-23</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/TIL/">TIL</a>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/11/23/191123/">191123</a>
+            
+        </h1>
+        <div class="content">
+            <h1 id="github-action-amp-github-packages-질문"><a href="#github-action-amp-github-packages-질문" class="headerlink" title="github action &amp; github packages 질문"></a>github action &amp; github packages 질문</h1><p>** 질문올린곳 ** ( oos개발자포럼,생활코딩 )</p>
+<ol>
+<li>docerr라던가 lightsail 같은 독립된 클라우드 환경에서 배포를 할때는 action에 워크플로워를 잡아서 배포를 하면 되는 걸까요?</li>
+<li>아예 docker도 설치가 안되어 있는 EC2 같은 환경에서 배포를 진행할때는 packages를 이용해서 action+packages로 배포를 하면 되는걸까요?</li>
+<li>그리고 이 일련의 동작들은 clone을 받는 순간에 자동으로 실행이 되는걸까요?</li>
+</ol>
+<p>** 답변 **</p>
+<p>깃헙 액션과 패키지는 코드가 깃헙에 올라갈 때</p>
+<p><em>자동으로 뭔가가 실행되는 (action) 겁니다. 그 “뭔가”는 어떤 액션을 지정하는가에 따라 달라집니다.</em></p>
+<p>_액션을 실행할 때 필요한 라이브러리 같은 것들이 있을텐데, 공개된 것을 사용할 수도 있고, 우리 팀 내부적으로만 자체적으로 만들어 놓은 것을 사용할 수도 있어요. 우리 팀 자체적으로 만들어 놓은 것만 쓰고 싶다면 그 때 패키지를 쓰면 됩니다. _</p>
+<p><em>이 두 컨셉은 깃헙 액션 = 애저 파이프라인, 깃헙 패키지 = 애저 아티팩트 정도로 대응이 가능하고 사용법도 비슷해서, 그쪽 문서를 보셔도 됩니다.</em></p>
+<p>** 결론 **</p>
+<p>action을 이용해서 장고 디폴트화면을 lightsail에서 엑션( clone을 했을때? )을 취했을때 환경설정( python, virtualenv, pip install -r requirement, python manage.py runserver )이 자동으로 될수 있도록 설정해보자</p>
+<p>그러고 나면 자연스럽게 packages의 개념도 익혀질것으로 보임</p>
+<p>** 유튜브 &gt; 인프런 **</p>
+<p>hexo 블로그 만들기 몇가지 내용 추가해서 강의 제작해서 올려보기</p>
+<ul>
+<li>vim에디터 레벨1 &gt; 2 &gt; 3 버전으로 나눠서 명령어 익히는 영상만들기</li>
+<li>커스텀 하는 영상 2~3개로 나눠서 만들기</li>
+</ul>
+<p>** 인스타그램영상 **</p>
+<ul>
+<li>소개영상 ( 작동영상 + 오픈소스 + 블로그 내용 추가해서 다시찍기 )</li>
+<li>검색창으로 태그 검색하는 코드 추가촬영</li>
+</ul>
+<p>** 깃엑션 **<br>아무내용없는 저장소 깃엑션으로 클론받아보기</p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-image">
         <a href="/2019/11/21/191122/" class="image is-7by1">
             <img class="thumbnail" src="/image/thumbnail/TIL.jpeg" alt="191122">
         </a>
@@ -795,58 +866,6 @@
 
 
 
-    
-<div class="card">
-    
-    <div class="card-image">
-        <a href="/2019/11/10/%EB%9D%BC%EC%9D%B4%ED%8A%B8%EC%84%B8%EC%9D%BC/" class="image is-7by1">
-            <img class="thumbnail" src="/image/thumbnail/lightsail.png" alt="라이트세일">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-11-10T07:19:37.000Z">2019-11-10</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/AWS/">AWS</a>
-                </div>
-                
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/11/10/%EB%9D%BC%EC%9D%B4%ED%8A%B8%EC%84%B8%EC%9D%BC/">라이트세일</a>
-            
-        </h1>
-        <div class="content">
-            <p><a href="https://aws.amazon.com/ko/s/lp/epid1014-b/?trk=ps_a131L000005Of2gQAC&trkCampaign=ACQ_Amazon_Lightsail&sc_channel=ps&sc_campaign=acquisition_KR&sc_publisher=google&sc_category=lightsail&sc_country=KR&sc_geo=APAC&sc_outcome=acquisition&sc_medium=ACQ-P|PS-GO|Brand|Desktop|SU|Compute|Lightsail|KR|EN|Text|Lightsail&sc_content=lightsail_e&s_kwcid=AL!4422!3!301818270442!e!!g!!lightsail&ef_id=CjwKCAiAh5_uBRA5EiwASW3IavBPIU77YtNdzflM3qtpamnB1rLejenCmyjNptmvEG5nE6CNFNyjuxoC81oQAvD_BwE:G:s" target="_blank" rel="noopener">라이트세일</a><br>은 아마존의 정액제 클라우드 서비스입니다</p>
-<p>음… 아마존에는 돈내고 쓰는 정말 많은 종류의 클라우드 서버가 있는데요<br>그중에 하나입니다 </p>
-<p>제일 유명한 서비스는 ec2입니다</p>
-<p><img src="https://user-images.githubusercontent.com/12974446/68547351-e1fc5b80-0423-11ea-89f4-383718c55097.jpg" alt="amazone-ec2-57bfe1345f9b5855e5a54003"></p>
-<p>온라인 공간에 가상의 컴퓨터를 만드는 건데요 원하는 만큼의 스토리지와 램, cpu를 만들고 원하는 때에 증설이 가능합니다</p>
-<p>성능을 높일수록 비용이 올라가는것 빼고는 정말 꿈의 써비스 입니다</p>
-<p>한국 리전에 생겨서 속도도 빠릅니다</p>
-
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
@@ -854,7 +873,7 @@
         <div class="pagination-previous">
             <a class="is-flex-grow has-text-black-ter" href="/">이전</a>
         </div>
-        <div class="pagination-next is-invisible is-hidden-mobile">
+        <div class="pagination-next">
             <a class="is-flex-grow has-text-black-ter" href="/page/3/">다음</a>
         </div>
         <ul class="pagination-list is-hidden-mobile">
@@ -862,6 +881,8 @@
             <li><a class="pagination-link has-text-black-ter" href="/">1</a></li>
             
             <li><a class="pagination-link is-current" href="/page/2/">2</a></li>
+            
+            <li><a class="pagination-link has-text-black-ter" href="/page/3/">3</a></li>
             
         </ul>
     </nav>
@@ -910,7 +931,7 @@
                         포스트
                     </p>
                     <p class="title has-text-weight-normal">
-                        20
+                        21
                     </p>
                 </div>
             </div>
@@ -920,7 +941,7 @@
                         카테고리
                     </p>
                     <p class="title has-text-weight-normal">
-                        5
+                        6
                     </p>
                 </div>
             </div>
@@ -930,7 +951,7 @@
                         태그
                     </p>
                     <p class="title has-text-weight-normal">
-                        26
+                        27
                     </p>
                 </div>
             </div>
@@ -1039,6 +1060,14 @@
         <a class="level is-marginless" href="/categories/AWS/">
             <span class="level-start">
                 <span class="level-item">AWS</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/JS/">
+            <span class="level-start">
+                <span class="level-item">JS</span>
             </span>
             <span class="level-end">
                 <span class="level-item tag">1</span>
